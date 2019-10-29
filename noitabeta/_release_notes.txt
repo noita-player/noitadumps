@@ -1,5 +1,19 @@
+  
+HOTFIXES - Oct 25 2019
  
-CHANGES FROM MASTER BUILD - Oct 23 2019
+BUGFIX: Release notes box was broken on ultrawide resolutions
+ 
+HOTFIXES - Oct 24 2019
+ 
+FEATURE: Release notes box is scrollable, so there can be more release notes than fit on the screen!
+ 
+MODDING: Support for stainable sprites in mod file folder
+MODDING: Lua - added ModDevGenerateSpriteUVsForDirectory( directory_path )
+MODDING: Restored wang_gen.exe which reported as false positive in some version of Avira antivirus
+MODDING/BUGFIX: Random starting loadouts characters don't stain
+MODDING/BUGFIX: When activating a mod sometimes wrong mod activates 
+ 
+RELEASE NOTES - Oct 23 2019
  
 FEATURE: Added experimental mod support (Pause->Mods). To get started with making mods, see Noita/tools_modding folder
 FEATURE: Added 12 new spells, 2 new enemies and 3 new perks 

@@ -43,7 +43,7 @@ ComponentSetValueVector2( component_id, variable_name, x, y )
 ConvertEverythingToGold
 CreateItemActionEntity( action_id, [optional]x, [optional]y ) -> entity_id
 DEBUG_GetMouseWorld
-DEBUG_MARK( x, y, string message=, color_r=1, color_g=0, color_b=0 )
+DEBUG_MARK( x, y, string message="", color_r=1, color_g=0, color_b=0 )
 DebugEnableTrailerMode
 DebugGetIsDevBuild
 Debug_SaveTestPlayer
@@ -89,7 +89,7 @@ GameGetGameEffect( entity_id, string GAME_EFFECT ) -> component_id
 GameGetGameEffectCount( entity_id, string GAME_EFFECT ) -> uint
 GameGetIsGamepadConnected
 GameGetIsTrailerModeEnabled
-GameGetOrbCollectedAllTimes( int orb_id_zero_based ) -> bool
+GameGetOrbCollectedAllTime( int orb_id_zero_based ) -> bool
 GameGetOrbCollectedThisRun( int orb_id_zero_based ) -> bool
 GameGetOrbCountAllTime
 GameGetOrbCountThisRun
@@ -130,7 +130,7 @@ GetUpdatedEntityID
 GetValueBool( key, default_value )
 GetValueInteger( key, default_value )
 GetValueNumber( key, default_value )
-GlobalsGetValue( key, default_value =  )
+GlobalsGetValue( key, default_value = "" )
 GlobalsSetValue( key, value )
 GuiButton( gui, x, y, text, id ) -> bool_clicked
 GuiCreate
@@ -181,6 +181,7 @@ LogAction( action_name )
 LooseChunk( world_pos_x, world_pos_y, image_filename, [optional] max_durability )
 Lua - error - SetTimeOut( time_to_execute, file_to_execute, function_to_call) , file_to_execute was NULL
 MagicNumbersGetValue( key )
+ModDevGenerateSpriteUVsForDirectory( directory_path ) [Only available via noita_dev.exe]
 ModLuaFileAppend( to_filename, from_filename )
 ModMagicNumbersFileAdd( filename )
 ModMaterialsFileAdd( filename )
