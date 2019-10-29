@@ -1,40 +1,39 @@
 ActionUsed
 ActionUsesRemainingChanged
-AddFlagPersistent( key )
+AddFlagPersistent( key ) -> bool_is_new
 AddMaterialInventoryMaterial( entity_id, material_name, count )
 AutosaveDisable
-BaabInstruction( entity_filename )
+BaabInstruction( name )
 BeginProjectile( entity_filename )
 BeginTriggerDeath
 BeginTriggerHitWorld
 BeginTriggerTimer
-BiomeMapGetIndex
-BiomeMapGetName( [x], [y] )
+BiomeMapGetName( [optional]x, [optional]y ) -> name
 BiomeMapGetPixel( x, y ) -> color_int
 BiomeMapGetSize
-BiomeMapGetVerticalPositionInsideBiome( x, y )
+BiomeMapGetVerticalPositionInsideBiome( x, y ) -> number
 BiomeMapLoadImageCropped
 BiomeMapLoadImageCropped( x, y, path, image_x, image_y, image_w, image_h )
 BiomeMapSetPixel( x, y, color_int )
 BiomeMapSetSize( w, h )
-CellFactory_GetAllFires( include_statics = true )
-CellFactory_GetAllGases( include_statics = true )
-CellFactory_GetAllLiquids( include_statics = true )
-CellFactory_GetAllSands( include_statics = true )
-CellFactory_GetAllSolids( include_statics = true )
-CellFactory_GetName( int material_id )
-CellFactory_GetType( string material_name )
-ComponentGetMembers( component_id )
-ComponentGetValue( component_id, variable_name )
-ComponentGetValueBool( component_id, variable_name )
-ComponentGetValueFloat( component_id, variable_name )
-ComponentGetValueInt( component_id, variable_name )
-ComponentGetValueVector2( component_id, variable_name )
-ComponentGetVector( component_id, array_name, type )
+CellFactory_GetAllFires( include_statics = true ) -> {string}
+CellFactory_GetAllGases( include_statics = true ) -> {string}
+CellFactory_GetAllLiquids( include_statics = true ) -> {string}
+CellFactory_GetAllSands( include_statics = true ) -> {string}
+CellFactory_GetAllSolids( include_statics = true ) -> {string}
+CellFactory_GetName( int material_id ) -> string
+CellFactory_GetType( string material_name ) -> int
+ComponentGetMembers( component_id ) -> {string}
+ComponentGetValue( component_id, variable_name ) -> string|nil
+ComponentGetValueBool( component_id, variable_name ) -> bool
+ComponentGetValueFloat( component_id, variable_name ) -> number
+ComponentGetValueInt( component_id, variable_name ) -> int
+ComponentGetValueVector2( component_id, variable_name ) -> x,y
+ComponentGetVector( component_id, array_name, type ) -> {multiple types}|nil
 ComponentGetVectorSize
-ComponentGetVectorValue( component_id, array_name, type, i )
-ComponentObjectGetMembers( component_id, object_name )
-ComponentObjectGetValueBool( component_id, object_name, variable_name )
+ComponentGetVectorValue( component_id, array_name, type, i ) -> multiple return types|nil
+ComponentObjectGetMembers( component_id, object_name ) -> {string}|nil
+ComponentObjectGetValueBool( component_id, object_name, variable_name ) -> string|nil
 ComponentObjectSetValue( component_id, object_name, variable_name, value )
 ComponentSetMetaCustom( component_id, variable_name, value )
 ComponentSetValue( component_id, variable_name, value )
@@ -42,70 +41,69 @@ ComponentSetValueValueRangeInt
 ComponentSetValueValueRangeInt( component_id, variable_name, min, max )
 ComponentSetValueVector2( component_id, variable_name, x, y )
 ConvertEverythingToGold
-CreateItemActionEntity( action_id, [optional]x, [optional]y )
+CreateItemActionEntity( action_id, [optional]x, [optional]y ) -> entity_id
 DEBUG_GetMouseWorld
-DEBUG_MARK( x, y, string message, color_r=1, color_g=0, color_b=0 )
+DEBUG_MARK( x, y, string message=, color_r=1, color_g=0, color_b=0 )
 DebugEnableTrailerMode
 DebugGetIsDevBuild
 Debug_SaveTestPlayer
 EndProjectile
 EndTrigger
 EntityAddChild( parent_id, child_id )
-EntityAddComponent( entity_id, component_type_name, table_of_component_values )
+EntityAddComponent( entity_id, component_type_name, [optional]table_of_component_values ) -> component_id
 EntityAddTag( entity_id, tag )
 EntityConvertToMaterial( entity_id, string material )
-EntityCreateNew( [optional] name )
-EntityGetAllChildren( entity_id )
-EntityGetAllComponents( entity_id )
+EntityCreateNew( [optional]name ) -> entity_id
+EntityGetAllChildren( entity_id ) -> {entity_id}|nil
+EntityGetAllComponents( entity_id ) -> {component_id}
 EntityGetClosestWithTag
-EntityGetClosestWithTag( pos_x, pos_y, string tag )
-EntityGetComponent( entity_id, component_name )
-EntityGetFirstComponent( entity_id, component_name, [tag] )
+EntityGetClosestWithTag( pos_x, pos_y, string tag ) -> entity_id
+EntityGetComponent( entity_id, component_type_name ) -> {component_id}|nil
+EntityGetFirstComponent( entity_id, component_type_name, [optional]tag ) -> component_id
 EntityGetIsAlive
-EntityGetName( entity_id )
-EntityGetParent( entity_id )
-EntityGetTags( entity_id )
-EntityGetTransform( entity_id )
-EntityGetWithName( name )
-EntityGetWithTag( entity_tag )
-EntityHasTag( entity_id, tag )
+EntityGetName( entity_id ) -> string
+EntityGetParent( entity_id ) -> entity_id
+EntityGetTags( entity_id ) -> string (comma separated)
+EntityGetTransform( entity_id ) -> x,y,rotation,scale_x,scale_y
+EntityGetWithName( name ) -> entity_id
+EntityGetWithTag( entity_tag ) -> {entity_id}
+EntityHasTag( entity_id, tag ) -> bool
 EntityKill( entity_id )
 EntityLoadCameraBound
-EntityLoadCameraBound( filename, pos_x, pos_y )
+EntityLoadCameraBound( filename, [optional]pos_x, [optional]pos_y )
 EntityRemoveComponent( entity_id, component_id )
 EntityRemoveTag( entity_id, tag )
 EntitySave
 EntitySetComponentIsEnabled( entity_id, component_id, is_enabled )
 EntitySetComponentsWithTagEnabled( entity_id, tag, enabled )
 EntitySetName( entity_id, name )
-EntitySetTransform( entity_id, x, y, rotation, scale_x, scale_y )
-FindFreePositionForBody( ideal_pos_x, idea_pos_y, velocity_x, velocity_y, body_radius )
+EntitySetTransform( entity_id, x, [optional]y, [optional]rotation, [optional]scale_x, [optional]scale_y )
+FindFreePositionForBody( ideal_pos_x, idea_pos_y, velocity_x, velocity_y, body_radius ) -> x,y
 GameAddFlagRun( flag )
-GameCreateParticle( string material_name, x, y, how_many, xvel, yvel, just_visual )
+GameCreateParticle( string material_name, x, y, how_many, xvel, yvel, just_visual, [optional]draw_as_long )
+GameDoEnding2
 GameEntityPlaySound( entity, event_name )
 GameGetCameraPos
-GameGetEndGameLocation
-GameGetEndGameSymbolName
-GameGetEndGameTime
 GameGetFrameNum
-GameGetGameEffect( entity_id, string GAME_EFFECT )
-GameGetGameEffectCount( entity_id, string GAME_EFFECT )
+GameGetGameEffect( entity_id, string GAME_EFFECT ) -> component_id
+GameGetGameEffectCount( entity_id, string GAME_EFFECT ) -> uint
 GameGetIsGamepadConnected
 GameGetIsTrailerModeEnabled
-GameGetOrbCollectedAllTimes( int orb_id_zero_based )
-GameGetOrbCollectedThisRun( int orb_id_zero_based )
+GameGetOrbCollectedAllTimes( int orb_id_zero_based ) -> bool
+GameGetOrbCollectedThisRun( int orb_id_zero_based ) -> bool
 GameGetOrbCountAllTime
 GameGetOrbCountThisRun
 GameGetPlayerStatsEntity
 GameGetPotionColorUint
 GameGetRealWorldTimeSinceStarted
-GameGetSymbolMagicName
-GameGetVelocityCompVelocity( entity_id )
+GameGetVelocityCompVelocity( entity_id ) -> x,y
 GameGetWorldStateEntity
 GameHasFlagRun( flag ) -> bool
-GameIsDailyRun( entity )
+GameIsDailyRun( entity ) -> bool
 GameIsIntroPlaying
+GameKillInventoryItem( who_picks_up_entity_id, item_entity_id )
 GameOnCompleted
+GamePickUpInventoryItem
 GamePlayAnimation( entity_id, name, priority, [followup_name], [followup_priority] )
 GamePlaySound( bank_filename, event_path, x, y )
 GamePrintImportant
@@ -114,18 +112,17 @@ GameRegenItemAction( entity_id )
 GameRegenItemActionsInContainer( entity_id )
 GameRegenItemActionsInPlayer( entity_id )
 GameRemoveFlagRun( flag )
-GameScreenshake( float strength, float pos_x, float pos_y )
-GameSetActiveItem
+GameScreenshake( strength, [optional]pos_x, [optional]pos_y )
 GameSetCameraFree( is_free )
 GameSetCameraPos( x, y )
 GameShootProjectile( who_shot, x, y, target_x, target_y, projectile_entity, send_message )
-GameTextGet( key, [optional] param0, [optional] param1, [optional] param2 )
-GameTextGetTranslatedOrNot( text_or_key )
+GameTextGet( key, [optional] param0, [optional] param1, [optional] param2 ) -> string
+GameTextGetTranslatedOrNot( text_or_key ) -> string
 GameTriggerMusicCue( name )
 GameTriggerMusicEvent( event_path, can_be_faded, x, y )
-GameTriggerMusicFadeOutAndDequeueAll( [optional] relative_fade_speed )
+GameTriggerMusicFadeOutAndDequeueAll( [optional]relative_fade_speed )
 GenomeSetHerdId( entity_id, string new_herd_id )
-GetGameEffectLoadTo( entity_id, string game_effect_entity_file, always_load_new )
+GetGameEffectLoadTo( entity_id, string game_effect_entity_file, always_load_new ) -> effect_compoent_id
 GetRandomActionWithType
 GetSurfaceNormal( pos_x, pos_y, ray_length, ray_count ) -> found_normal,normal_x,normal_y,approximate_distance_from_surface
 GetUpdatedComponentID
@@ -135,7 +132,7 @@ GetValueInteger( key, default_value )
 GetValueNumber( key, default_value )
 GlobalsGetValue( key, default_value =  )
 GlobalsSetValue( key, value )
-GuiButton( gui, x, y, text, id )
+GuiButton( gui, x, y, text, id ) -> bool_clicked
 GuiCreate
 GuiDestroy( gui )
 GuiLayoutAddHorizontalSpacing( gui )
@@ -146,8 +143,8 @@ GuiLayoutEnd( gui )
 GuiStartFrame( gui )
 GuiTextCentered
 GuiTextCentered( gui, x, y, text )
-HasFlagPersistent( key )
-IsPlayer( entity )
+HasFlagPersistent( key ) -> bool
+IsPlayer( entity ) -> bool
 LUI_GetSliderValue( sprite_id )
 LUI_GetValue( key )
 LUI_LoadSlider( filename, start_x, start_y, end_x, end_y )
@@ -178,7 +175,7 @@ LUI_TweenSpriteRotationTo( sprite_id, rotation, time, easing_name )
 LUI_TweenSpriteScaleTo( sprite_id, scale_x, scale_y, time, easing_name )
 LUI_TweenSpriteTo( sprite_id, target_x, target_y, time, easing_name )
 LoadEntityToStash( entity_file, stash_id )
-LoadGameEffectEntityTo
+LoadGameEffectEntityTo( entity_id, string game_effect_entity_file ) -> effect_entity_id
 LoadPixelScene( string materials_filename, string colors_filename, x, y, string background_file, skip_biome_checks = false, skip_edge_textures = false, color_to_material_table = {} )
 LogAction( action_name )
 LooseChunk( world_pos_x, world_pos_y, image_filename, [optional] max_durability )
@@ -187,11 +184,12 @@ MagicNumbersGetValue( key )
 ModLuaFileAppend( to_filename, from_filename )
 ModMagicNumbersFileAdd( filename )
 ModMaterialsFileAdd( filename )
+ModRegisterAudioEventMappings( filename )
 OnActionPlayed( action_id )
 OnNotEnoughManaForAction
 PhysicsAddBodyCreateBox
-PhysicsAddBodyImage( entity_id, material, offset_x, offset_y, width, height, bool centered = false )
-PhysicsAddJoint( entity_id, body_id0, body_id1, offset_x, offset_y, string joint_type )
+PhysicsAddBodyImage( entity_id, material, offset_x, offset_y, width, height, bool centered = false ) -> int_body_id|nil
+PhysicsAddJoint( entity_id, body_id0, body_id1, offset_x, offset_y, string joint_type ) -> int_joint_id
 PhysicsApplyForce( entity_id, float force_x, float force_y )
 PhysicsApplyTorqueToComponent
 PhysicsApplyTorqueToComponent( entity_id, component_id, float torque )
@@ -200,8 +198,8 @@ PhysicsSetStatic( entity_id, bool is_static )
 ProceduralRandom
 RandomDistribution
 RandomDistributionf
-RandomDistributionf( min, max, mean, (sharpness=1.f), (baseline=0.005) )
-Raytrace( pos1_x, pos1_y, pos2_x, pos2_y )
+RandomDistributionf( min, max, mean, (sharpness=1.f), (baseline=0.005) ) -> number
+Raytrace( x1, y1, x2, y2 ) -> did_hit,hit_x,hit_y
 Reflection_RegisterProjectile
 RegisterGunAction
 RegisterGunAction
@@ -209,20 +207,19 @@ RegisterGunShotEffects
 RegisterPerk
 RegisterSpawnFunction( uint32 color, string function_name )
 RemoveFlagPersistent( key )
-SetPlayerSpawnLocation( string log_line )
+SetPlayerSpawnLocation( x, y )
 SetProjectileConfigs
 SetRandomSeed(x,y)
 SetValueBool( key, value )
 SetValueInteger( key, value )
 SetValueNumber( key, value )
 SpawnActionItem( x, y, level )
-SpawnApparition( x, y, level )
-SpawnPersistentTeleport( x, y, level )
-SpawnStash( x, y, level, action_count )
+SpawnApparition( x, y, level ) -> int,entity_id
+SpawnStash( x, y, level, action_count ) -> entity_id
 StartReload
-StatsBiomeGetValue( key )
+StatsBiomeGetValue( key ) -> string
 StatsBiomeReset
-StatsGetValue( key )
+StatsGetValue( key ) -> string
 StatsLogPlayerKill
 UnlockItem( action_id )
 dofile( filename )

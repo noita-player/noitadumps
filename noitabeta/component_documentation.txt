@@ -2199,7 +2199,6 @@ WormComponent
  - Members -----------------------------
     speed                                                           1 [0, 10000]                    ""
     acceleration                                                    3 [0, 10000]                    ""
-    ground_decceleration                                            3 [0, 10000]                    ""
     gravity                                                         3 [0, 10000]                    ""
     tail_gravity                                                    30 [0, 10000]                   ""
     part_distance                                                   10 [0, 10000]                   ""
