@@ -1,0 +1,228 @@
+ActionUsed
+ActionUsesRemainingChanged
+AddFlagPersistent( key )
+AddMaterialInventoryMaterial( entity_id, material_name, count )
+AutosaveDisable
+BaabInstruction( entity_filename )
+BeginProjectile( entity_filename )
+BeginTriggerDeath
+BeginTriggerHitWorld
+BeginTriggerTimer
+BiomeMapGetIndex
+BiomeMapGetName( [x], [y] )
+BiomeMapGetSize
+BiomeMapGetVerticalPositionInsideBiome( x, y )
+BiomeMapLoadImageCropped
+BiomeMapLoadImageCropped( x, y, path, image_x, image_y, image_w, image_h )
+BiomeMapSetPixel( x, y, color_int )
+BiomeMapSetSize( w, h )
+ComponentGetMembers( component_id )
+ComponentGetValue( component_id, variable_name )
+ComponentGetValueBool( component_id, variable_name )
+ComponentGetValueFloat( component_id, variable_name )
+ComponentGetValueInt( component_id, variable_name )
+ComponentGetValueVector2( component_id, variable_name )
+ComponentGetVector( component_id, array_name, type )
+ComponentGetVectorSize
+ComponentGetVectorValue( component_id, array_name, type, i )
+ComponentObjectGetMembers( component_id, object_name )
+ComponentObjectGetValueBool( component_id, object_name, variable_name )
+ComponentObjectSetValue( component_id, object_name, variable_name, value )
+ComponentSetMetaCustom( component_id, variable_name, value )
+ComponentSetValue( component_id, variable_name, value )
+ComponentSetValueValueRangeInt
+ComponentSetValueValueRangeInt( component_id, variable_name, min, max )
+ComponentSetValueVector2( component_id, variable_name, x, y )
+ConvertEverythingToGold
+CreateItemActionEntity( action_id, x, y ) [x,y are optional]
+DEBUG_GetMouseWorld
+DEBUG_MARK( x, y, string message, color_r=1, color_g=0, color_b=0 )
+DebugEnableTrailerMode
+Debug_SaveTestPlayer
+EndProjectile
+EndTrigger
+EntityAddChild( parent_id, child_id )
+EntityAddComponent( entity_id, component_name, table_of_component_values )
+EntityAddTag( entity_id, tag )
+EntityConvertToMaterial( entity_id, string material )
+EntityCreateNew( name )
+EntityGetAllChildren( entity_id )
+EntityGetAllComponents( entity_id )
+EntityGetClosestWithTag( pos_x, pos_y, string tag )
+EntityGetComponent( entity_id, component_name )
+EntityGetFirstComponent( entity_id, component_name, [tag] )
+EntityGetIsAlive
+EntityGetName( entity_id )
+EntityGetParent( entity_id )
+EntityGetTags( entity_id )
+EntityGetTransform( entity_id )
+EntityGetWithTag( entity_tag )
+EntityHasTag( entity_id, tag )
+EntityKill( entity_id )
+EntityLoad( filename, pos_x, pos_y )
+EntityLoadCameraBound( filename, pos_x, pos_y )
+EntityRemoveComponent( entity_id, component_id )
+EntitySave( entity_id, filename )
+EntitySetComponentIsEnabled( entity_id, component_id, is_enabled )
+EntitySetComponentsWithTagEnabled( entity_id, tag, enabled )
+EntitySetName( entity_id, name )
+EntitySetTransform( entity_id, x, y, rotation, scale_x, scale_y )
+FindFreePositionForBody( ideal_pos_x, idea_pos_y, velocity_x, velocity_y, body_radius )
+GameAddFlagRun( flag )
+GameEntityPlaySound( entity, event_name )
+GameGetCameraPos
+GameGetEndGameLocation
+GameGetEndGameSymbolName
+GameGetEndGameTime
+GameGetFrameNum
+GameGetGameEffect( entity_id, string GAME_EFFECT )
+GameGetGameEffectCount( entity_id, string GAME_EFFECT )
+GameGetIsGamepadConnected
+GameGetIsTrailerModeEnabled
+GameGetOrbCountAllTime
+GameGetOrbCountThisRun
+GameGetPlayerStatsEntity
+GameGetPotionColorUint
+GameGetSymbolMagicName
+GameGetVelocityCompVelocity( entity_id )
+GameGetWorldStateEntity
+GameIsDailyRun( entity )
+GameIsIntroPlaying
+GameOnCompleted
+GamePlayAnimation( entity_id, name, priority, [followup_name], [followup_priority] )
+GamePlaySound( bank_filename, event_path, x, y )
+GamePrintImportant
+GamePrintImportant( string title, description )
+GameRemoveFlagRun( flag )
+GameScreenshake( float strength, float pos_x, float pos_y )
+GameSetActiveItem
+GameShootProjectile( who_shot, x, y, target_x, target_y, projectile_entity, send_message )
+GameTextGet( key, [optional] param0, [optional] param1, [optional] param2 )
+GameTextGetTranslatedOrNot( text_or_key )
+GameTriggerMusicCue( name )
+GameTriggerMusicEvent( event_path, can_be_faded, x, y )
+GameTriggerMusicFadeOutAndDequeueAll( [optional] relative_fade_speed )
+GenomeSetHerdId( entity_id, string new_herd_id )
+GetGameEffectLoadTo( entity_id, string game_effect_entity_file, always_load_new )
+GetRandomActionWithType
+GetSpawnLocationNear
+GetSpawnLocationNear
+GetSpawnLocationNear( x, y, needs_dark )
+GetSpawnLocationNear( x, y, needs_dark )
+GetSurfaceNormal( pos_x, pos_y, ray_length, ray_count ) -> found_normal,normal_x,normal_y,approximate_distance_from_surface
+GetUpdatedComponentID
+GetUpdatedEntityID
+GetValueBool( key, default_value )
+GetValueInteger( key, default_value )
+GetValueNumber( key, default_value )
+GlobalsGetValue( key, default_value =  )
+GlobalsSetValue( key, value )
+GuiButton( gui, x, y, text, id )
+GuiCreate
+GuiDestroy( gui )
+GuiLayoutAddHorizontalSpacing( gui )
+GuiLayoutAddVerticalSpacing( gui )
+GuiLayoutBeginHorizontal( gui, x_rel, y_rel )
+GuiLayoutBeginVertical( gui, x_rel, y_rel  )
+GuiLayoutEnd( gui )
+GuiStartFrame( gui )
+GuiTextCentered
+GuiTextCentered( gui, x, y, text )
+HasFlagPersistent( key )
+IsPlayer( entity )
+LUI_GetSliderValue( sprite_id )
+LUI_GetValue( key )
+LUI_LoadSlider( filename, start_x, start_y, end_x, end_y )
+LUI_LoadSprite( filename )
+LUI_LoadTextSprite( filename )
+LUI_SetCallbacks( callback_name, callback_function )
+LUI_SetSliderValue( sprite_id, value )
+LUI_SetTimeOut( float time_to_execute, string callback_function )
+LUI_SpriteAddAsChild( sprite_father, sprite_child )
+LUI_SpriteBringToFront( sprite_id )
+LUI_SpriteKill( sprite_id )
+LUI_SpriteMoveTo( sprite_id, x, y )
+LUI_SpritePauseRectAnimation( sprite_id )
+LUI_SpritePlayRectAnimation( sprite_id, rect_animation )
+LUI_SpriteSendToBack( sprite_id )
+LUI_SpriteSetAlpha( sprite_id, alpha )
+LUI_SpriteSetCenterOffset( sprite_id, x, y )
+LUI_SpriteSetColor( sprite_id, r, g, b )
+LUI_SpriteSetName( sprite_id, name )
+LUI_SpriteSetRotation( sprite_id, rotation )
+LUI_SpriteSetScale( sprite_id, x, y )
+LUI_SpriteSetText( sprite_id, text )
+LUI_StoreValue( key, value )
+LUI_TweenClearAll( sprite_id )
+LUI_TweenReverse( sprite_id )
+LUI_TweenSpriteAlphaTo( sprite_id, alpha, time, easing_name )
+LUI_TweenSpriteRotationTo( sprite_id, rotation, time, easing_name )
+LUI_TweenSpriteScaleTo( sprite_id, scale_x, scale_y, time, easing_name )
+LUI_TweenSpriteTo( sprite_id, target_x, target_y, time, easing_name )
+LoadEntityToStash( entity_file, stash_id )
+LoadGameEffectEntityTo
+LogAction( action_name )
+LooseChunk( world_pos_x, world_pos_y, image_filename, [max_durability] )
+Lua - error - SetTimeOut( time_to_execute, file_to_execute, function_to_call) , file_to_execute was NULL
+Lua_CellFactory_GetAllFires( include_statics = true )
+Lua_CellFactory_GetAllGases( include_statics = true )
+Lua_CellFactory_GetAllLiquids( include_statics = true )
+Lua_CellFactory_GetAllSands( include_statics = true )
+Lua_CellFactory_GetAllSolids( include_statics = true )
+Lua_CellFactory_GetName( int material_id )
+Lua_CellFactory_GetType( string material_name )
+Lua_GameCreateParticle( string material_name, x, y, how_many, xvel, yvel, just_visual )
+Lua_GameGetOrbCollectedAllTimes( int orb_id_zero_based )
+Lua_GameGetOrbCollectedThisRun( int orb_id_zero_based )
+Lua_GameRegenItemAction( entity_id )
+Lua_GameRegenItemActionsInContainer( entity_id )
+Lua_GameRegenItemActionsInPlayer( entity_id )
+Lua_GameSetCameraFree( is_free )
+Lua_GameSetCameraPos( x, y )
+Lua_LoadPixelScene( string materials_filename, string colors_filename, x, y, string background_file, skip_biome_checks = false, skip_edge_textures = false, color_to_material_table = {} )
+Lua_Raytrace( pos1_x, pos1_y, pos2_x, pos2_y )
+Lua_SetPlayerSpawnLocation( string log_line )
+Lua_UnlockItem( action_id )
+MagicNumbersGetValue( key )
+ModLuaFileAppend( to_filename, from_filename )
+ModMagicNumbersFileAdd( filename )
+ModMaterialsFileAdd( filename )
+OnActionPlayed( action_id )
+OnNotEnoughManaForAction
+PhysicsAddBodyCreateBox
+PhysicsAddBodyImage( entity_id, material, offset_x, offset_y, width, height, bool centered = false )
+PhysicsAddJoint( entity_id, body_id0, body_id1, offset_x, offset_y, string joint_type )
+PhysicsApplyForce( entity_id, float force_x, float force_y )
+PhysicsRemoveJoints( world_pos_min_x, world_pos_min_y, world_pos_max_x, world_pos_max_y  )
+PhysicsSetStatic( entity_id, bool is_static )
+ProceduralRandom
+RandomDistribution
+RandomDistributionf
+RandomDistributionf( min, max, mean, (sharpness=1.f), (baseline=0.005) )
+Reflection_RegisterProjectile
+RegisterGunAction
+RegisterGunAction
+RegisterGunShotEffects
+RegisterPerk
+RegisterSpawnFunction( uint32 color, string function_name )
+RemoveFlagPersistent( key )
+SetProjectileConfigs
+SetRandomSeed(x,y)
+SetValueBool( key, value )
+SetValueInteger( key, value )
+SetValueNumber( key, value )
+SpawPersistentTeleport
+SpawnActionItem( x, y, level )
+SpawnApparition( x, y, level )
+SpawnStash( x, y, level, action_count )
+StartReload
+StatsBiomeGetValue( key )
+StatsBiomeReset
+StatsGetValue( key )
+StatsLogPlayerKill
+bool Lua_GameHasFlagRun( flag )
+color_int BiomeMapGetPixel( x, y )
+loadfile
+lua_wizard_dofile( filename )
+print
+print_error
