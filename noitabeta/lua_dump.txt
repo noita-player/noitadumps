@@ -98,6 +98,7 @@ GameGetOrbCountAllTime
 GameGetOrbCountThisRun
 GameGetPlayerStatsEntity
 GameGetPotionColorUint
+GameGetRealWorldTimeSinceStarted
 GameGetSymbolMagicName
 GameGetVelocityCompVelocity( entity_id )
 GameGetWorldStateEntity

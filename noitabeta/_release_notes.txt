@@ -29,5 +29,6 @@ MODDING: Lua - added PhysicsApplyTorque( entity_id, float torque )
 MODDING: Lua - added EntityRemoveTag( entity_id, tag )
 MODDING: Lua - added EntityGetClosest( pos_x, pos_y )
 MODDING: Lua - added EntityGetWithName(entity_id) (note: slow!)
+MODDING: Lua - added GameGetRealWorldTimeSinceStarted()
 MODDING: Lua - removed GameDirector (breaking change)
 MODDING/BUGFIX: Lua - EntityHasTag() - adds the queried tag to entity
