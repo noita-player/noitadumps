@@ -349,6 +349,14 @@ CameraBoundComponent
     freeze_on_distance_kill                                         1 [0, 1]                        "If true and the entity went too far - this entity will be stored so we can later respawn it where it was destroyed because it got too far from the camera?"
     freeze_on_max_count_kill                                        1 [0, 1]                        "If true and the entity was one too many of its kind - this entity will be stored so we can later respawn it where it was destroyed because it got too far from the camera?"
 
+CardinalMovementComponent
+ - Members -----------------------------
+    horizontal_movement                                             1 [0, 1]                        "allow horizontal movement"
+    vertical_movement                                               1 [0, 1]                        "allow vertical movement"
+    intercardinal_movement                                          0 [0, 1]                        "allow intercardinal movement"
+ - Privates -----------------------------
+    mPrevPos                                                        -                               ""
+
 CellEaterComponent
  - Members -----------------------------
     radius                                                          10 [0, 100]                     ""
@@ -1152,6 +1160,10 @@ ItemStashComponent
     mNextFrameOpenable                                              0 [0, 1]                        ""
     mFrameOpened                                                    -1 [0, 1]                       ""
 
+KickComponent
+ - Members -----------------------------
+    kick_radius                                                     3 [0, 3.5]                      ""
+
 LevitationComponent
  - Members -----------------------------
     radius                                                          20 [1, 50]                      "the radius in which we look for entities / bodies to float"
@@ -1272,6 +1284,7 @@ MagicConvertMaterialComponent
     radius                                                          256 [0, 512]                    ""
     is_circle                                                       0 [0, 1]                        ""
     steps_per_frame                                                 10 [0, 512]                     ""
+    from_material_tag                                               -                               "the tag of material, e.g. [liquid]"
     from_any_material                                               0 [0, 1]                        "if 1, converts any cells of any material to 'to_materia'"
     clean_stains                                                    0 [0, 1]                        ""
     extinguish_fire                                                 0 [0, 1]                        ""
@@ -1813,6 +1826,7 @@ ProjectileComponent
     hit_particle_force_multiplier                                   0.1 [0, 1]                      "hit particle velocity = projectile_velocity * hit_particle_force_multiplier * some randomness"
     blood_count_multiplier                                          1 [0, 1]                        "how much blood does this projectile cause"
     damage_game_effect_entities                                     -                               "a list of game_effects entities separated with ','. e.g. 'data/entities/misc/effect_electrocution.xml,data/entities/misc/effect_on_fire.xml' "
+    never_hit_player                                                0 [0, 1]                        "If 1, does not hit player no matter what herds this and player belong to"
     collect_materials_to_shooter                                    0 [0, 1]                        "if 1, looks up the 'who_shot' entity and its MaterialInventoryComponent on destruction and updates it based on the cells destroyed on our explosion."
     play_damage_sounds                                              1 [0, 1]                        ""
  - Objects -----------------------------

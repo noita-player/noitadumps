@@ -24,6 +24,7 @@ CellFactory_GetAllSolids( include_statics = true ) -> {string}
 CellFactory_GetName( int material_id ) -> string
 CellFactory_GetType( string material_name ) -> int
 ComponentGetMembers( component_id ) -> {string}
+ComponentGetMetaCustom( component_id, variable_name ) -> string|nil
 ComponentGetValue( component_id, variable_name ) -> string|nil
 ComponentGetValueBool( component_id, variable_name ) -> bool
 ComponentGetValueFloat( component_id, variable_name ) -> number
@@ -72,6 +73,7 @@ EntityKill( entity_id )
 EntityLoadCameraBound
 EntityLoadCameraBound( filename, [optional]pos_x, [optional]pos_y )
 EntityRemoveComponent( entity_id, component_id )
+EntityRemoveFromParent( entity_id )
 EntityRemoveTag( entity_id, tag )
 EntitySave
 EntitySetComponentIsEnabled( entity_id, component_id, is_enabled )
