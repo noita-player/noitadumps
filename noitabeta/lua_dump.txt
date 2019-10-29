@@ -184,9 +184,6 @@ Lua_Raytrace( pos1_x, pos1_y, pos2_x, pos2_y )
 Lua_SetPlayerSpawnLocation( string log_line )
 Lua_UnlockItem( action_id )
 MagicNumbersGetValue( key )
-ModLuaFileAppend( to_filename, from_filename )
-ModMagicNumbersFileAdd( filename )
-ModMaterialsFileAdd( filename )
 OnActionPlayed( action_id )
 OnNotEnoughManaForAction
 PhysicsAddBodyCreateBox
