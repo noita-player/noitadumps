@@ -1041,8 +1041,8 @@ Inventory2Component
     full_inventory_slots_x                                          8 [0, 30]                       ""
     full_inventory_slots_y                                          8 [0, 30]                       ""
  - Privates -----------------------------
-    mActiveItem                                                     -                               ""
-    mActualActiveItem                                               -                               ""
+    mActiveItem                                                     0 [0, 1]                        "NOTE: Don't attempt to directly change the value of this field via lua code. It will probably break the game logic in obvious or subtle ways."
+    mActualActiveItem                                               0 [0, 1]                        "NOTE: Don't attempt to directly change the value of this field via lua code. It will probably break the game logic in obvious or subtle ways."
     mActiveStash                                                    0 [0, 1]                        ""
     mItemHolstered                                                  0 [0, 1]                        ""
     mInitialized                                                    0 [0, 1]                        ""
