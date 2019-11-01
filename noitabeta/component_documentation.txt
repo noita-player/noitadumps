@@ -521,6 +521,8 @@ ControlsComponent
     mButtonFrameFire2                                               0 [0, 1]                        ""
     mButtonDownAction                                               0 [0, 1]                        ""
     mButtonFrameAction                                              0 [0, 1]                        ""
+    mButtonDownThrow                                                0 [0, 1]                        ""
+    mButtonFrameThrow                                               0 [0, 1]                        ""
     mButtonDownInteract                                             0 [0, 1]                        ""
     mButtonFrameInteract                                            0 [0, 1]                        ""
     mButtonDownLeft                                                 0 [0, 1]                        ""
@@ -1142,6 +1144,8 @@ ItemCostComponent
  - Members -----------------------------
     cost                                                            100 [0, 3500]                   ""
     stealable                                                       0 [0, 1]                        "if set - will check that it's within an area called shop"
+ - Privates -----------------------------
+    mExCost                                                         -1 [0, 1]                       "used to change the text on the sprite"
 
 ItemPickUpperComponent
  - Members -----------------------------
@@ -1815,6 +1819,7 @@ ProjectileComponent
     spawn_entity                                                    -                               "this is spawned if hit something an on_collision_spawn_entity = 1"
     spawn_entity_is_projectile                                      0 [0, 1]                        "if true, will use ShootProjectile instead of LoadEntity()"
     physics_impulse_coeff                                           300 [0, 1]                      "projectile applies an impulse to physics bodies it hits. Impulse = physics_impulse_coeff * velocity"
+    damage_every_x_frames                                           -1 [0, 1]                       "if set != -1, will only do damage every x frames, used for fields and such, which would otherwise do damage every frame"
     damage_scaled_by_speed                                          0 [0, 1]                        "if 1, damage is multiplied by (projectile speed / original projectile speed) ratio"
     collide_with_entities                                           1 [0, 1]                        "if 1, looks for entities with tag, collide_with_tag and collides with them, giving them damage"
     collide_with_tag                                                hittable [0, 1]                 "default: mortal, if you needed can be changed to something more specific"
@@ -1829,6 +1834,7 @@ ProjectileComponent
     never_hit_player                                                0 [0, 1]                        "If 1, does not hit player no matter what herds this and player belong to"
     collect_materials_to_shooter                                    0 [0, 1]                        "if 1, looks up the 'who_shot' entity and its MaterialInventoryComponent on destruction and updates it based on the cells destroyed on our explosion."
     play_damage_sounds                                              1 [0, 1]                        ""
+    mLastFrameDamaged                                               -1024 [0, 1]                    ""
  - Objects -----------------------------
     config                                                          -                               ""
     config_explosion                                                -                               "if we have explosion, it's the setup for it"

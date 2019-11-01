@@ -23,7 +23,7 @@ CellFactory_GetAllSands( include_statics = true ) -> {string}
 CellFactory_GetAllSolids( include_statics = true ) -> {string}
 CellFactory_GetName( int material_id ) -> string
 CellFactory_GetType( string material_name ) -> int
-ComponentGetMembers( component_id ) -> {string}
+ComponentGetMembers( component_id ) -> {string-string} [returns a string-indexed table of string]
 ComponentGetMetaCustom( component_id, variable_name ) -> string|nil
 ComponentGetValue( component_id, variable_name ) -> string|nil
 ComponentGetValueBool( component_id, variable_name ) -> bool
@@ -33,7 +33,7 @@ ComponentGetValueVector2( component_id, variable_name ) -> x,y
 ComponentGetVector( component_id, array_name, type ) -> {multiple types}|nil
 ComponentGetVectorSize
 ComponentGetVectorValue( component_id, array_name, type, i ) -> multiple return types|nil
-ComponentObjectGetMembers( component_id, object_name ) -> {string}|nil
+ComponentObjectGetMembers( component_id, object_name ) -> {string-string}|nil [returns a string-indexed table of string]
 ComponentObjectGetValueBool( component_id, object_name, variable_name ) -> string|nil
 ComponentObjectSetValue( component_id, object_name, variable_name, value )
 ComponentSetMetaCustom( component_id, variable_name, value )
@@ -61,10 +61,12 @@ EntityGetClosestWithTag
 EntityGetClosestWithTag( pos_x, pos_y, string tag ) -> entity_id
 EntityGetComponent( entity_id, component_type_name ) -> {component_id}|nil
 EntityGetFirstComponent( entity_id, component_type_name, [optional]tag ) -> component_id
+EntityGetInRadiusWithTag
+EntityGetInRadiusWithTag( pos_x, pos_y, radius, entity_tag ) -> {entity_id}
 EntityGetIsAlive
 EntityGetName( entity_id ) -> string
 EntityGetParent( entity_id ) -> entity_id
-EntityGetTags( entity_id ) -> string (comma separated)
+EntityGetTags( entity_id ) -> string|nil [string is comma separated]
 EntityGetTransform( entity_id ) -> x,y,rotation,scale_x,scale_y
 EntityGetWithName( name ) -> entity_id
 EntityGetWithTag( entity_tag ) -> {entity_id}
@@ -123,6 +125,7 @@ GameTextGetTranslatedOrNot( text_or_key ) -> string
 GameTriggerMusicCue( name )
 GameTriggerMusicEvent( event_path, can_be_faded, x, y )
 GameTriggerMusicFadeOutAndDequeueAll( [optional]relative_fade_speed )
+GameVecToPhysicsVec( x, [optional]y ) -> x,y
 GenomeSetHerdId( entity_id, string new_herd_id )
 GetGameEffectLoadTo( entity_id, string game_effect_entity_file, always_load_new ) -> effect_compoent_id
 GetRandomActionWithType
@@ -196,8 +199,11 @@ PhysicsAddJoint( entity_id, body_id0, body_id1, offset_x, offset_y, string joint
 PhysicsApplyForce( entity_id, float force_x, float force_y )
 PhysicsApplyTorqueToComponent
 PhysicsApplyTorqueToComponent( entity_id, component_id, float torque )
+PhysicsGetComponentAngularVelocity( entity_id, component_id ) -> vel
+PhysicsGetComponentVelocity( entity_id, component_id ) -> vel_x,vel_y
 PhysicsRemoveJoints( world_pos_min_x, world_pos_min_y, world_pos_max_x, world_pos_max_y  )
 PhysicsSetStatic( entity_id, bool is_static )
+PhysicsVecToGameVec( x, [optional]y ) -> x,y
 ProceduralRandom
 RandomDistribution
 RandomDistributionf
