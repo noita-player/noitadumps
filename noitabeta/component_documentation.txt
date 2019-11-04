@@ -1150,6 +1150,7 @@ ItemCostComponent
 ItemPickUpperComponent
  - Members -----------------------------
     is_in_npc                                                       0 [0, 1]                        ""
+    is_immune_to_kicks                                              0 [0, 1]                        "if set, won't drop the wand if kicked. Mainly used by wand ghosts."
 
 ItemRechargeNearGroundComponent
  - Members -----------------------------
@@ -1309,9 +1310,12 @@ ManaReloaderComponent
 
 MaterialAreaCheckerComponent
  - Members -----------------------------
+    update_every_x_frame                                            0 [0, 1]                        "if something other than 0 or 1, will only update_every_x_frames "
     look_for_failure                                                1 [0, 1]                        "if true, will send message Message_MaterialAreaCheckerFailed if the material doesn't exist. If false, will send a message Message_MaterialAreaCheckerSuccess if the aabb is full of material and material2"
     kill_after_message                                              1 [0, 1]                        "will kill this entity after sending the message"
+ - Privates -----------------------------
     mPosition                                                       0 [0, 1]                        "keeps track where we are"
+    mLastFrameChecked                                               0 [0, 1]                        "keeps track of how often we've checked"
 
 MaterialComponent
  - Members -----------------------------

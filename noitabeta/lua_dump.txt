@@ -86,6 +86,7 @@ FindFreePositionForBody( ideal_pos_x, idea_pos_y, velocity_x, velocity_y, body_r
 GameAddFlagRun( flag )
 GameCreateParticle( string material_name, x, y, how_many, xvel, yvel, just_visual, [optional]draw_as_long )
 GameDoEnding2
+GameDropAllItems( entity_id )
 GameEntityPlaySound( entity, event_name )
 GameGetCameraPos
 GameGetFrameNum
