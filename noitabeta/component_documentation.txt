@@ -441,6 +441,7 @@ CharacterPlatformingComponent
     run_animation_velocity_switching_threshold                      45 [0, 1000]                    ""
     run_animation_velocity_switching_enabled                        0 [0, 1]                        ""
     turn_animation_frames_between                                   20 [0, 100]                     ""
+    precision_jumping_max_duration_frames                           -1 [0, 1]                       "maximum duration of precision jump or knockback. -1 = infinite"
  - Privates -----------------------------
     mExAnimationPos                                                 -                               ""
     mFramesInAirCounter                                             -1 [0, 1]                       ""
@@ -1020,7 +1021,8 @@ IKLimbWalkerComponent
     ground_attachment_max_angle                                     0.8 [0, 1]                      ""
     ground_attachment_ray_length_coeff                              1.15 [0, 1]                     ""
     leg_velocity_coeff                                              15 [0, 1]                       ""
-    mState                                                          0 [0, 1]                        ""
+    affect_flying                                                   0 [0, 1]                        "if set, will cause the mFlyingTime (in CharacterDataComponent) of the parent to be 0 or 1 depending on if we're touching anything"
+    mState                                                          0 [0, 1]                        "0 = detached, 1 = attached"
 
 IngestionComponent
  - Members -----------------------------
@@ -1129,6 +1131,7 @@ ItemComponent
     ui_sprite                                                       -                               "sprite displayed for the item in various UIs. If not empty overrides sprites declared by Ability and ItemAction"
     ui_description                                                  -                               "item description displayed in various UIs"
     enable_orb_hacks                                                0 [0, 1]                        ""
+    is_all_spells_book                                              0 [0, 1]                        ""
     next_frame_pickable                                             0 [0, 1]                        ""
     is_pickable                                                     1 [0, 1]                        "can this be picked up and placed on someone's inventory"
     is_hittable_always                                              0 [0, 1]                        "to override the weirdness that is is_pickable, which affects if this is hittable or not. If true, will always be hittable regardless of is_pickable"

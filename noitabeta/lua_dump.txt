@@ -9,13 +9,13 @@ BeginTriggerDeath
 BeginTriggerHitWorld
 BeginTriggerTimer
 BiomeMapGetName( [optional]x, [optional]y ) -> name
-BiomeMapGetPixel( x, y ) -> color_int
+BiomeMapGetPixel( x, y ) -> color_int [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
 BiomeMapGetSize
 BiomeMapGetVerticalPositionInsideBiome( x, y ) -> number
 BiomeMapLoadImageCropped
-BiomeMapLoadImageCropped( x, y, path, image_x, image_y, image_w, image_h )
-BiomeMapSetPixel( x, y, color_int )
-BiomeMapSetSize( w, h )
+BiomeMapLoadImageCropped( x, y, path, image_x, image_y, image_w, image_h ) [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
+BiomeMapSetPixel( x, y, color_int ) [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
+BiomeMapSetSize( w, h ) [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
 CellFactory_GetAllFires( include_statics = true ) -> {string}
 CellFactory_GetAllGases( include_statics = true ) -> {string}
 CellFactory_GetAllLiquids( include_statics = true ) -> {string}
@@ -128,7 +128,7 @@ GameTriggerMusicEvent( event_path, can_be_faded, x, y )
 GameTriggerMusicFadeOutAndDequeueAll( [optional]relative_fade_speed )
 GameVecToPhysicsVec( x, [optional]y ) -> x,y
 GenomeSetHerdId( entity_id, string new_herd_id )
-GetGameEffectLoadTo( entity_id, string game_effect_entity_file, always_load_new ) -> effect_compoent_id
+GetGameEffectLoadTo( entity_id, string game_effect_entity_file, always_load_new ) -> effect_component_id
 GetRandomActionWithType
 GetSurfaceNormal( pos_x, pos_y, ray_length, ray_count ) -> found_normal,normal_x,normal_y,approximate_distance_from_surface
 GetUpdatedComponentID
@@ -232,7 +232,7 @@ StatsBiomeReset
 StatsGetValue( key ) -> string
 StatsLogPlayerKill
 UnlockItem( action_id )
-dofile( filename )
-dofile( filename )
+__loaded={} dofile=function(filename) local f=__loaded[filename] if f==nil then f,err=loadfile(filename) if f==nil then return f,err end __loaded[filename]=f end local result = f() do_mod_appends(filename) return result end
 print
+print_error
 print_error
