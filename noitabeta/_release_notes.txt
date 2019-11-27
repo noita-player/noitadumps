@@ -1,11 +1,11 @@
- 
-CHANGES FROM MASTER BUILD - Nov 26 2019
+﻿ 
+CHANGES FROM MASTER BUILD - Nov 27 2019
  
 FEATURE: Main menu
 FEATURE: Game mode selection menu 
-FEATURE: Added 4 new spells
+FEATURE: Added 5 new spells
 FEATURE: Added 4 new enemies
-FEATURE: Scrollable gui elements can be scrolled using mouse wheel
+FEATURE: Scrollable GUI elements can be scrolled using mouse wheel
  
 UPDATE: Large aesthetical updates to a secret area
 UPDATE: Summon Deer Decoy is now properly named as Summon Deercoy
@@ -13,11 +13,15 @@ UPDATE: Nerfed Sokaisunmestari's blinding spell
 UPDATE: Polymorph flying has been updated 
 UPDATE: Optimization - replay recorder - up to 6x faster gif saving
 UPDATE: Optimization - got rid of some script performance bottlenecks
+UPDATE: Added a new starting loadout
+UPDATE: Autosave is now on - it's a bit buggy, but it should be better than losing your progress
+UPDATE: Lukki mutation -perk now has a different control scheme
  
 BUGFIX: Crash - sometimes when enemies shot eggs
 BUGFIX: Crash - kicking crashed the game when playing old savegame (or old mods)
 BUGFIX: Crash - fixed memory leak with material trails
 BUGFIX: Crash - replay editor crashed if used at the very first frame of the game
+BUGFIX: Crash - game crashed at start on some older CPUs
 BUGFIX: Certain enemies could be damaged via unintended means
 BUGFIX: There were duplicate items in progress menu
 BUGFIX: Glitch wand has been fixed
@@ -32,6 +36,8 @@ BUGFIX: Aiming was wrong while polymoprhed
 BUGFIX: Rock spell's damage wasn't based on the rock's velocity
 BUGFIX: Physics damage was sometimes dealt multiple frames after it seemed to occur
 BUGFIX: Melee immunity didn't protect from tentacle attacks
+BUGFIX: Player's horizontal flight speed was randomized
+BUGFIX: Jäähdytyslaite should no longer self-destruct in certain circumstances
  
 MODDING: Added a new tag 'projectile_player' for all default player projectiles
 MODDING: Lua - added dofile_once(filename). Use this if possible. Like dofile(), but runs the script only once per lua context.

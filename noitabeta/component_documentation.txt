@@ -2186,6 +2186,7 @@ WorldStateComponent
     player_polymorph_count                                          0 [0, 1]                        "how many times player has been polymorphed"
     player_polymorph_random_count                                   0 [0, 1]                        "how many times player has been random polymorphed"
     global_genome_relations_modifier                                0 [0, 1]                        "Genome_GetHerdRelation adds this value to the results. 100 = good relations, 0 is bad "
+    mods_have_been_active_during_this_run                           0 [0, 1]                        ""
     EVERYTHING_TO_GOLD                                              0 [0, 1]                        "if true everything will be gold + used to track if the wallet should go to infinite"
     INFINITE_GOLD_HAPPENING                                         0 [0, 1]                        "the secret ending with infinite gold"
     DEBUG_LOADED_FROM_AUTOSAVE                                      0 [0, 1]                        "how many times have loaded from autosaves"
