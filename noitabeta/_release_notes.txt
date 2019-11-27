@@ -1,11 +1,11 @@
-﻿ 
+ 
 CHANGES FROM MASTER BUILD - Nov 27 2019
  
+FEATURE: New Game+
 FEATURE: Main menu
 FEATURE: Game mode selection menu 
 FEATURE: Added 5 new spells
 FEATURE: Added 4 new enemies
-FEATURE: Scrollable GUI elements can be scrolled using mouse wheel
  
 UPDATE: Large aesthetical updates to a secret area
 UPDATE: Summon Deer Decoy is now properly named as Summon Deercoy
@@ -15,7 +15,8 @@ UPDATE: Optimization - replay recorder - up to 6x faster gif saving
 UPDATE: Optimization - got rid of some script performance bottlenecks
 UPDATE: Added a new starting loadout
 UPDATE: Autosave is now on - it's a bit buggy, but it should be better than losing your progress
-UPDATE: Lukki mutation -perk now has a different control scheme
+UPDATE: Lukki mutation perk now has a different control scheme
+UPDATE: Scrollable GUI elements can be scrolled using mouse wheel
  
 BUGFIX: Crash - sometimes when enemies shot eggs
 BUGFIX: Crash - kicking crashed the game when playing old savegame (or old mods)
