@@ -496,7 +496,7 @@ uQSH
 !h\S(
 !hhb'
 !j
-h|
+hl
 !problems! @ 
 !~0!^4
 "&.8E
@@ -1594,6 +1594,7 @@ $windowmode_windowed
 %<uQ
 %<vQ
 %<wQ
+%<|F
 %?ff&?=
 %@pQ
 %@qQ
@@ -3396,7 +3397,6 @@ W0
 +T$LA
 +T$LA
 +V(A
-+WD+
 +\$<
 +t$D+
 +u=ht
@@ -6876,6 +6876,11 @@ I
 54cF
 54cF
 54cF
+54|F
+54|F
+54|F
+54|F
+54|F
 58>Q
 58>Q
 58>Q
@@ -6895,6 +6900,15 @@ I
 5<cF
 5<cF
 5<cF
+5<|F
+5<|F
+5<|F
+5<|F
+5<|F
+5<|F
+5<|F
+5<|F
+5<|F
 5@>Q
 5@>Q
 5@>Q
@@ -9122,14 +9136,16 @@ W>
 =0cF
 =0|F
 =1|F
-=2|F
 =4@Q
 =4@Q
 =4cF
 =4cF
 =4hH=
+=4|F
 =8cF
 =8cF
+=8|F
+=;|F
 =<AQ
 =<FO
 =<FO
@@ -9734,7 +9750,7 @@ W>
 @9D>
 @;B(|
 @<;C<uC
-@?hT
+@?hh
 @@31@@V
 @@@@@@
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>@@@?456789:;<=@@@@@@@
@@ -10710,7 +10726,7 @@ Box2D - b->m_torque.IsValid == false
 Box2D - endless loop was broken... things might be broken: 
 Box2D problems too many contact pairs!
 Brush (
-Build Nov 28 2019 15:37:46
+Build Nov 28 2019 17:15:07
 Build in 
 BuildingUI - cached: '
 BuildingUIComponent
@@ -10952,6 +10968,7 @@ CE$P
 CE_^[]
 CF@S
 CFunctionPtr_Test
+CH+CD
 CH+CD
 CH;C4
 CH;C4
@@ -12991,6 +13008,7 @@ FDPW
 FDPW
 FD^[
 FDtu
+FDugh<
 FG;u
 FG;u
 FGL init error: 
@@ -13053,6 +13071,7 @@ FPS:
 FP^]
 FP_^[
 FPfff?
+FPu)jH
 FQ_^[
 FRAME %
 FRAME START
@@ -13529,7 +13548,6 @@ GD_^[
 GD_^[]
 GENERAL_NOISE
 GFV;&
-GH+GD
 GH+GD
 GH+GD3
 GH9FHt
@@ -14223,8 +14241,8 @@ HandleEvent - Player Entity Destroyed
 HasFlagPersistent
 HasFlagPersistent( key ) -> bool
 HealthBarComponent
-Hh*sD
-HhuUD
+Hh/sD
+HhzUD
 Hit entity needs to have this 'GAME_EFFECT' for effects to apply. If both 'condition_effect' and 'condition_status' are set, they are combined with AND logic
 Hit entity needs to have this 'STATUS_EFFECT' for effects to apply
 HitEffectComponent
@@ -15944,13 +15962,13 @@ No errors.
 No opengl compability profile selected, please specific either fglOpenGLProfileType_CoreProfile or fglOpenGLProfileType_CompabilityProfile
 No saves with selected filter
 Noita (Nov 28 2019) - 
-Noita Early Access - Build Nov 28 2019 - 15:37:46
+Noita Early Access - Build Nov 28 2019 - 17:15:07
 Noita is in early access, we'll try to fix this. :/
-Noita-Early-Access-Build-Nov 28 2019-15:37:46
+Noita-Early-Access-Build-Nov 28 2019-17:15:07
 Nolla_Games_Noita
 Not enough memory or resources.
 Note(Petri): Is this used anywhere? - the maximum 'max_hp' that this can have, <= 0 means no limits
-Nov 28 2019 15:37:38
+Nov 28 2019 17:14:59
 Np+Nl
 Np_^[
 Np_^[
@@ -16662,7 +16680,7 @@ P _^
 P _^[
 P _^[
 P h,
-P hHz*
+P j1hHz*
 P$_^2
 P($I
 P(;D$Xu
@@ -19351,13 +19369,6 @@ Phh6'
 Phh6'
 Phh6'
 Phh6'
-Phh:D
-Phh:D
-Phh:D
-Phh:D
-Phh:D
-Phh:D
-Phh:D
 Phh<(
 Phh<(
 Phh<(
@@ -19407,6 +19418,13 @@ Phlv+
 Phlv+
 Phlv+
 Phlv+
+Phm:D
+Phm:D
+Phm:D
+Phm:D
+Phm:D
+Phm:D
+Phm:D
 Pho-@
 Pho-@
 Pho-@
@@ -20235,7 +20253,6 @@ Qh$v(
 Qh$v(
 Qh$v(
 Qh$v(
-Qh,t>
 Qh0[*
 Qh0[*
 Qh49&
@@ -20249,6 +20266,7 @@ Qh8R'
 Qh8R'
 Qh8R'
 Qh8R'
+QhHt>
 QhP2+
 QhXb'
 QhXb'
@@ -20364,7 +20382,7 @@ RQPW
 RQVS
 RRHP
 RRHP
-RSDSi
+RSDS
 RTPQ
 RThTDO
 RVPQ
@@ -20390,7 +20408,7 @@ Raytrace
 Raytrace( x1, y1, x2, y2 ) -> did_hit,hit_x,hit_y
 Reached maximum audible playback count for this sound's soundgroup.
 Reaction
-Recording - Noita Early Access - Build Nov 28 2019 - 15:37:46
+Recording - Noita Early Access - Build Nov 28 2019 - 17:15:07
 RectAnimation
 Reflection_RegisterProjectile
 Regions
@@ -23065,7 +23083,6 @@ SVWP
 SVWP
 SVWP
 SVWP
-SVWP
 SVWf
 SVWf
 SVWh
@@ -23135,7 +23152,7 @@ ShdR'
 SheetTest
 Sheets
 ShellExecuteA
-ShfLC
+ShkLC
 ShotEffectComponent
 Should the explosion emit light to its surroundings?
 Should we create few fire particles around the explosion
@@ -24538,7 +24555,6 @@ Y\$Pf
 Y\$`
 Y\$d
 Y\$d
-Y_^[
 Y_^[
 Y_^[
 Y_^[
@@ -35265,16 +35281,13 @@ gun_shuffle
 gunaction_config
 gunpowder
 gunpowder_explosive
-h	)!
-h	B!
-h	DD
-h	v$
-h	|!
+h	-"
+h	V"
+h	a$
+h	}#
 h
-kD
-h
-kD
-h 	%
+RD
+h 	$
 h 
 ,
 h 
@@ -35297,10 +35310,10 @@ h  &
 h  &
 h  &
 h  &
-h !#
 h "A
 h "A
 h $(
+h % 
 h %,
 h &%
 h '&
@@ -35330,11 +35343,12 @@ h .*
 h .*
 h .*
 h /+
+h 0%
+h 1%
 h 1(
-h 3!
-h 3#
-h 3%
+h 2%
 h 3,
+h 4#
 h 4&
 h 4&
 h 4&
@@ -35361,6 +35375,7 @@ h 6*
 h 6*
 h 6*
 h 6A
+h 8#
 h 8&
 h 8&
 h 8&
@@ -35377,8 +35392,9 @@ h 9*
 h 9*
 h 9*
 h 9,
+h :!
 h :+
-h ;E
+h <"
 h =(
 h =(
 h =(
@@ -35392,12 +35408,13 @@ h =*
 h >Q
 h >Q
 h >Q
-h @ 
+h ? 
 h @Q
 h @Q
 h @Q
-h C%
-h D%
+h B 
+h C!
+h E%
 h E,
 h F&
 h F&
@@ -35406,7 +35423,8 @@ h F&
 h F&
 h F&
 h G,
-h H"
+h I%
+h J%
 h J'
 h J'
 h J'
@@ -35418,13 +35436,24 @@ h J(
 h J(
 h J(
 h J,
+h K%
+h L"
+h L%
 h L,
+h M%
+h N%
 h N,
-h O 
+h O$
+h O%
 h O,
+h P%
 h P,
+h Q%
 h Q+
+h R%
+h S%
 h S,
+h T%
 h T(
 h T(
 h T(
@@ -35498,36 +35527,32 @@ h U&
 h U&
 h U&
 h U&
-h V%
-h W%
 h X+
 h X+
-h Z!
-h Z"
+h Y#
+h Y%
 h Z'
+h ["
 h [*
 h [*
 h [*
-h \%
 h \,
-h ]%
 h ^*
 h ^*
 h ^*
 h ^*
 h ^*
-h b%
-h c%
 h d,
 h h,
 h hA
 h kA
+h l%
 h l+
+h m%
 h o%
 h q+
-h r%
+h r$
 h sA
-h t$
 h t&
 h t&
 h t&
@@ -35537,21 +35562,13 @@ h t&
 h t&
 h t&
 h t+
-h u%
-h y%
-h {%
-h |#
-h ~#
-h!_"
-h!w#
-h"y$
-h#: 
-h#; 
-h#E$
+h z%
+h!# 
+h!& 
+h!@$
+h!~ 
 h#L@
-h#O!
-h#`"
-h#q$
+h#]C
 h$	,
 h$"&
 h$#'
@@ -35665,6 +35682,7 @@ h$^A
 h$^A
 h$aA
 h$e(
+h$iE
 h$n*
 h$p&
 h$p&
@@ -35687,6 +35705,7 @@ h$r'
 h$r'
 h$r'
 h$t*
+h$x#
 h$x&
 h$x&
 h$x&
@@ -35698,9 +35717,13 @@ h$x&
 h${(
 h${(
 h${(
-h%[#
-h%i$
-h&5 
+h%"$
+h%;E
+h%E!
+h%m$
+h&4 
+h'W 
+h'e 
 h(	'
 h(	'
 h(	'
@@ -35710,7 +35733,6 @@ h(	'
 h( &
 h( &
 h( ,
-h($ 
 h($(
 h(%'
 h(%*
@@ -35735,8 +35757,11 @@ h()*
 h()*
 h()*
 h()*
+h(*!
+h(*$
 h(*A
 h(*A
+h(+$
 h(+*
 h(+*
 h(+*
@@ -35756,8 +35781,7 @@ h(2A
 h(2A
 h(5(
 h(5(
-h(6 
-h(6!
+h(8 
 h(8*
 h(8*
 h(8*
@@ -35765,14 +35789,14 @@ h(8*
 h(8*
 h(8*
 h(8*
-h(9 
+h(;$
+h(<!
 h(<*
 h(<*
 h(<*
 h(<*
 h(<*
 h(<*
-h(= 
 h(=&
 h(=&
 h(=&
@@ -35780,6 +35804,7 @@ h(=&
 h(=&
 h(=&
 h(=&
+h(>$
 h(?&
 h(?&
 h(?&
@@ -35787,8 +35812,7 @@ h(?&
 h(?&
 h(?&
 h(?&
-h(A$
-h(C 
+h(B$
 h(D'
 h(D'
 h(F+
@@ -35803,9 +35827,6 @@ h(G(
 h(G*
 h(GA
 h(GA
-h(H!
-h(I!
-h(K!
 h(K(
 h(K(
 h(K(
@@ -35821,28 +35842,26 @@ h(N&
 h(N&
 h(N+
 h(OA
-h(P"
 h(P&
 h(P&
 h(P&
 h(P&
 h(P&
 h(P&
+h(Q#
 h(Q*
 h(R+
 h(R+
 h(R+
 h(R,
 h(S&
-h(T#
 h(T*
-h(V 
+h(U#
 h(V(
 h(V(
 h(W*
 h(W+
 h(W,
-h(X#
 h(X'
 h(X'
 h(X'
@@ -35871,15 +35890,13 @@ h(_*
 h(_*
 h(_*
 h(_*
-h(`!
+h(`$
 h(a,
 h(b'
 h(b'
 h(b'
 h(c*
 h(c*
-h(d$
-h(e$
 h(e(
 h(e,
 h(f,
@@ -35913,6 +35930,7 @@ h(m*
 h(m*
 h(m*
 h(m*
+h(n#
 h(o&
 h(o&
 h(o&
@@ -35920,8 +35938,6 @@ h(o&
 h(o&
 h(o&
 h(o&
-h(p"
-h(p#
 h(p'
 h(p'
 h(p'
@@ -35940,6 +35956,7 @@ h(p'
 h(p'
 h(q*
 h(r*
+h(s 
 h(s*
 h(t,
 h(w&
@@ -35952,8 +35969,6 @@ h(w&
 h(w&
 h(w'
 h(w,
-h(y"
-h({C
 h(|&
 h(|&
 h(|&
@@ -35964,22 +35979,23 @@ h(|&
 h(|&
 h(|&
 h(|&
-h)\"
-h)c$
-h)w$
-h)z#
-h){#
+h)'!
+h))$
+h)8"
+h)J#
+h)P#
+h)[!
+h)f"
+h)t!
+h*Y"
 h*aB
-h+) 
-h+. 
-h+5$
-h+D!
-h+I#
-h+K#
-h+N!
-h+N#
-h+S!
-h+_$
+h+" 
+h+%$
+h+.$
+h+0 
+h+0$
+h+7#
+h+Y!
 h,!'
 h,!'
 h,!'
@@ -36031,7 +36047,6 @@ h,0'
 h,0'
 h,0'
 h,1,
-h,3$
 h,7+
 h,:&
 h,:&
@@ -36055,7 +36070,6 @@ h,F(
 h,F(
 h,F,
 h,G+
-h,GF
 h,H&
 h,H&
 h,H&
@@ -36069,7 +36083,6 @@ h,H&
 h,H&
 h,H&
 h,O+
-h,OC
 h,Q+
 h,R&
 h,R&
@@ -36127,22 +36140,20 @@ h,t*
 h,u'
 h,u,
 h,w'
-h-2F
-h.D$
-h.]"
-h.q#
+h-{C
+h.p 
+h0	%
 h0
 ,
+h0!#
 h0!,
 h0",
 h0#,
-h0% 
 h0%,
 h0&%
 h0)&
 h0)&
 h0)&
-h0,$
 h00,
 h01'
 h01'
@@ -36154,8 +36165,8 @@ h01'
 h01'
 h01(
 h01+
-h02"
-h02#
+h03#
+h03%
 h03B
 h04'
 h04'
@@ -36164,7 +36175,7 @@ h04'
 h04'
 h04'
 h04'
-h05#
+h05!
 h07A
 h07A
 h08'
@@ -36174,7 +36185,7 @@ h08'
 h08'
 h08'
 h08'
-h0:!
+h09!
 h0:*
 h0:+
 h0;'
@@ -36188,6 +36199,7 @@ h0;+
 h0<,
 h0=A
 h0=A
+h0> 
 h0>&
 h0>&
 h0>&
@@ -36196,22 +36208,21 @@ h0>&
 h0>&
 h0>&
 h0>,
-h0? 
 h0?A
 h0@+
+h0A 
 h0A*
 h0A+
-h0B 
-h0C!
+h0C%
 h0C'
 h0C'
+h0D%
 h0D*
 h0F*
 h0F*
+h0H"
 h0H,
 h0I@
-h0T%
-h0V"
 h0V%
 h0V&
 h0V&
@@ -36231,9 +36242,9 @@ h0W&
 h0W&
 h0W&
 h0W&
-h0X%
 h0X(
 h0Y(
+h0Z"
 h0[&
 h0[&
 h0[&
@@ -36253,6 +36264,8 @@ h0[*
 h0[+
 h0[+
 h0[,
+h0\%
+h0]%
 h0^*
 h0^*
 h0^*
@@ -36264,8 +36277,10 @@ h0^*
 h0`+
 h0`+
 h0a(
+h0b%
 h0b+
 h0b+
+h0c%
 h0c&
 h0c&
 h0c&
@@ -36297,13 +36312,11 @@ h0d*
 h0d*
 h0d*
 h0d*
-h0e%
 h0e&
 h0e&
 h0e&
 h0e&
 h0e&
-h0g"
 h0g&
 h0g&
 h0g&
@@ -36320,13 +36333,15 @@ h0k*
 h0k*
 h0k*
 h0k*
+h0o%
 h0p+
 h0p+
 h0p+
 h0q*
-h0s$
+h0r%
 h0s(
-h0u#
+h0t$
+h0u%
 h0u&
 h0u&
 h0u&
@@ -36335,7 +36350,6 @@ h0u&
 h0u&
 h0u&
 h0u&
-h0v%
 h0v&
 h0v&
 h0v&
@@ -36368,30 +36382,25 @@ h0y%
 h0{%
 h0{*
 h0{*
-h0|"
-h1# 
-h1& 
-h17$
-h1>#
-h1BF
-h1BF
-h1BF
-h1BF
-h1BF
-h1BF
-h1BF
-h1BF
-h1BF
-h1BF
-h1I"
-h1W#
-h1f$
-h1~ 
-h2dF
-h2x$
-h2z$
-h3<$
-h3p$
+h0|#
+h0~#
+h1	 
+h1
+ 
+h1GF
+h1OC
+h1_"
+h1w#
+h1|F
+h1|F
+h22F
+h2y$
+h3#!
+h31!
+h3E$
+h3J!
+h3`"
+h3q$
 h4	,
 h4%*
 h4&(
@@ -36519,7 +36528,6 @@ h4j*
 h4j*
 h4j*
 h4j*
-h4m"
 h4m(
 h4m(
 h4n*
@@ -36560,21 +36568,31 @@ h4y&
 h4y&
 h4y&
 h4y&
-h5E!
-h64 
-h6d"
-h7S#
-h7W 
-h7e 
+h5[#
+h5i$
+h6@!
+h6BF
+h6BF
+h6BF
+h6BF
+h6BF
+h6BF
+h6BF
+h6BF
+h6BF
+h6BF
+h6{ 
+h7?!
+h7dF
 h8#*
 h8$*
 h8$A
 h8$A
-h8'$
+h8' 
+h8( 
 h8(&
 h8)&
 h8)&
-h8*!
 h8**
 h8**
 h8**
@@ -36592,9 +36610,7 @@ h85*
 h85*
 h85*
 h85*
-h86$
-h87E
-h88 
+h87 
 h88,
 h89*
 h89*
@@ -36603,7 +36619,6 @@ h89*
 h89*
 h89*
 h89*
-h8;#
 h8;&
 h8;&
 h8;&
@@ -36612,7 +36627,7 @@ h8;&
 h8;&
 h8;&
 h8;,
-h8<!
+h8=!
 h8=(
 h8=(
 h8=(
@@ -36620,28 +36635,25 @@ h8=(
 h8=(
 h8=(
 h8=(
-h8B#
+h8A$
 h8BO
 h8BO
 h8BO
 h8BO
 h8BO
-h8D"
 h8DA
 h8DA
 h8E+
-h8G#
 h8G,
 h8L+
 h8L,
-h8M#
-h8N"
 h8NA
 h8O*
-h8Q"
+h8P"
 h8Q*
 h8Q+
 h8Q,
+h8T#
 h8T,
 h8U&
 h8U&
@@ -36662,6 +36674,7 @@ h8W'
 h8W'
 h8W'
 h8W+
+h8X#
 h8X'
 h8X'
 h8X'
@@ -36703,11 +36716,12 @@ h8`&
 h8`(
 h8a(
 h8c+
+h8d$
+h8e$
 h8g(
 h8g(
 h8g(
 h8g(
-h8i"
 h8i(
 h8j,
 h8k&
@@ -36738,6 +36752,8 @@ h8l*
 h8l*
 h8l*
 h8m,
+h8p"
+h8p#
 h8p'
 h8p'
 h8p'
@@ -36761,34 +36777,30 @@ h8p(
 h8p,
 h8p,
 h8r*
-h8s 
 h8t*
-h8w"
-h8x"
+h8y"
 h8{(
 h8|*
 h8}&
 h8}&
 h8}&
 h8}&
-h9#D
-h9#D
-h9#D
-h9#D
-h9'!
-h9[!
-h9t!
-h9y#
-h:+E
-h; #
-h;" 
-h;'"
-h;0 
-h;@#
-h;A#
-h;Y!
-h;^"
-h;j"
+h9\"
+h9c$
+h9w$
+h9z#
+h9{#
+h9}!
+h;! 
+h;/ 
+h;5$
+h;G!
+h;I#
+h;K#
+h;L!
+h;N#
+h;]!
+h;_$
 h<#'
 h<#'
 h<#'
@@ -36828,6 +36840,7 @@ h<2'
 h<2'
 h<2'
 h<2'
+h<3$
 h<3,
 h<4*
 h<4*
@@ -36958,9 +36971,16 @@ h<w'
 h<w'
 h<w'
 h<{*
-h>9#
-h>oC
-h>p 
+h=7E
+h=< 
+h>#D
+h>#D
+h>#D
+h>#D
+h>D$
+h>]"
+h>q#
+h?+E
 h?8B
 h?8B
 h?8B
@@ -36973,7 +36993,6 @@ h?8B
 h?v@
 h@
 ,
-h@ %
 h@ ,
 h@#(
 h@#(
@@ -36999,17 +37018,18 @@ h@),
 h@*&
 h@*&
 h@*&
-h@+%
+h@,$
 h@-,
 h@.,
 h@/,
-h@1$
 h@1*
 h@1*
 h@1*
 h@1*
 h@1*
 h@1*
+h@2"
+h@2#
 h@3*
 h@3*
 h@3*
@@ -37018,11 +37038,10 @@ h@3A
 h@4+
 h@4+
 h@4,
-h@5!
+h@5#
 h@5,
 h@7+
 h@7,
-h@9!
 h@:&
 h@:&
 h@:&
@@ -37038,23 +37057,21 @@ h@<&
 h@<&
 h@<&
 h@<&
-h@> 
+h@@ 
 h@@,
-h@A 
+h@A!
 h@A,
-h@B%
 h@B'
 h@B'
 h@C'
 h@C'
+h@D 
 h@D*
 h@D*
-h@H$
 h@K+
 h@K+
 h@K+
 h@K,
-h@L#
 h@N'
 h@N'
 h@N'
@@ -37064,8 +37081,12 @@ h@P,
 h@PB
 h@Q+
 h@R,
-h@U%
+h@T%
+h@V"
+h@V%
+h@W%
 h@W+
+h@X%
 h@Z&
 h@Z&
 h@Z&
@@ -37077,7 +37098,6 @@ h@Z&
 h@Z+
 h@Z+
 h@Z,
-h@[%
 h@['
 h@['
 h@['
@@ -37085,20 +37105,17 @@ h@[*
 h@[*
 h@[*
 h@[*
-h@\%
-h@`%
 h@`,
 h@`A
-h@b"
 h@b&
 h@b&
 h@b&
 h@b&
 h@b&
 h@b&
+h@e%
 h@e,
-h@f%
-h@g%
+h@g"
 h@h+
 h@i(
 h@i+
@@ -37111,8 +37128,6 @@ h@o'
 h@o'
 h@o'
 h@o'
-h@r"
-h@r$
 h@r&
 h@r&
 h@r&
@@ -37122,7 +37137,7 @@ h@r&
 h@r&
 h@r&
 h@r*
-h@s%
+h@s$
 h@s*
 h@s,
 h@t&
@@ -37133,26 +37148,33 @@ h@t&
 h@t&
 h@t&
 h@t&
+h@u#
+h@v%
 h@w'
 h@y%
 h@z&
+h@{%
+h@|"
 h@~*
-hA	 
-hA
- 
-hAO"
-hAu$
-hBUE
-hBZ#
-hC#!
-hC$$
-hC1!
-hCF$
-hCJ!
-hCJ"
-hCo$
-hCr#
-hC}"
+h@~*
+hA  
+hA7$
+hA>#
+hAI"
+hAW#
+hAf$
+hBx$
+hBz$
+hB| 
+hC* 
+hC+ 
+hC, 
+hC- 
+hC<$
+hCF!
+hCZ 
+hCoC
+hCp$
 hD	&
 hD	&
 hD	&
@@ -37228,7 +37250,6 @@ hDCA
 hDF,
 hDI*
 hDJ,
-hDPC
 hDQ+
 hDQ+
 hDRA
@@ -37271,7 +37292,10 @@ hDi'
 hDi'
 hDi'
 hDi'
+hDk!
+hDm"
 hDp+
+hDq 
 hDq(
 hDq(
 hDq(
@@ -37306,12 +37330,12 @@ hD{(
 hD{(
 hD{(
 hD{(
-hEDD
-hEj$
-hF@!
+hD|F
+hD|F
 hF_A
-hF{ 
-hG?!
+hFd"
+hGS#
+hGUE
 hH	"
 hH	A
 hH	A
@@ -37346,8 +37370,7 @@ hH&*
 hH&*
 hH&A
 hH&A
-hH' 
-hH( 
+hH'$
 hH+A
 hH,,
 hH.'
@@ -37357,19 +37380,23 @@ hH.'
 hH.'
 hH.'
 hH/+
-hH0$
 hH0'
 hH0'
 hH0'
+hH2!
 hH4A
 hH4A
+hH6 
+hH6$
 hH6'
 hH6'
 hH6'
 hH6'
 hH6'
 hH6'
-hH7 
+hH7!
+hH8!
+hH9 
 hH9&
 hH9&
 hH9&
@@ -37377,6 +37404,9 @@ hH9'
 hH9'
 hH9'
 hH:A
+hH; 
+hH;!
+hH;#
 hH;'
 hH;'
 hH;'
@@ -37384,10 +37414,11 @@ hH;'
 hH;'
 hH;'
 hH;'
-hH=!
+hH= 
 hH>A
 hH>A
-hHB$
+hHB#
+hHD"
 hHE'
 hHE'
 hHE'
@@ -37397,6 +37428,7 @@ hHE'
 hHE'
 hHE'
 hHEO
+hHG#
 hHG(
 hHG(
 hHG(
@@ -37420,8 +37452,10 @@ hHK'
 hHK'
 hHK'
 hHK'
+hHM#
+hHN"
 hHN,
-hHR#
+hHQ"
 hHR'
 hHR'
 hHR'
@@ -38013,7 +38047,6 @@ hH]Q
 hH]Q
 hH]Q
 hH]Q
-hH^$
 hH_*
 hH_*
 hH_*
@@ -38069,6 +38102,7 @@ hHe'
 hHe'
 hHe'
 hHe(
+hHi"
 hHj*
 hHj*
 hHj*
@@ -38111,12 +38145,12 @@ hHq'
 hHq'
 hHq+
 hHq+
-hHrE
 hHt(
 hHt(
 hHt(
 hHt*
 hHu*
+hHw"
 hHw&
 hHw&
 hHw&
@@ -38125,6 +38159,7 @@ hHw&
 hHw&
 hHw&
 hHw&
+hHx"
 hHx&
 hHx&
 hHx&
@@ -38146,28 +38181,30 @@ hH{&
 hH{&
 hH{&
 hH{&
+hH~!
 hH~&
 hH~&
 hH~&
 hH~&
 hH~&
-hI	D
-hIe"
-hI}!
-hI}#
+hH~*
+hIPC
+hIy#
+hI|!
+hJDD
+hJW!
 hJuA
-hK! 
-hK.$
-hK/ 
-hK/$
-hKC$
-hKE"
-hKG!
-hKL!
-hK[E
-hK]!
-hKv#
-hKzD
+hK #
+hK'"
+hK) 
+hK. 
+hK@#
+hKA#
+hKC 
+hKN 
+hKT!
+hK^"
+hKj"
 hL!,
 hL#*
 hL(+
@@ -38192,8 +38229,6 @@ hL3'
 hL3'
 hL5(
 hL5(
-hL8$
-hL9$
 hL:&
 hL:&
 hL:&
@@ -38215,7 +38250,6 @@ hLB+
 hLB,
 hLC+
 hLC+
-hLCC
 hLCO
 hLF(
 hLG'
@@ -38303,7 +38337,6 @@ hLm&
 hLm&
 hLm&
 hLm&
-hLo"
 hLp+
 hLp+
 hLp+
@@ -38333,21 +38366,16 @@ hLw+
 hLw+
 hL}(
 hM4B
-hM< 
-hM{F
-hN=$
+hMrE
+hN	D
+hN(!
+hN)!
+hN9#
 hO$A
-hP
-$
-hP
-%
+hO2 
 hP
 ,
-hP!%
-hP"#
-hP"%
-hP#%
-hP$%
+hP %
 hP$'
 hP$'
 hP$'
@@ -38355,13 +38383,12 @@ hP$'
 hP$'
 hP$'
 hP$'
-hP%%
 hP%*
+hP&%
 hP&,
 hP',
 hP)A
 hP)A
-hP*%
 hP**
 hP**
 hP**
@@ -38369,6 +38396,7 @@ hP**
 hP**
 hP**
 hP**
+hP+%
 hP,'
 hP,'
 hP,'
@@ -38382,13 +38410,12 @@ hP,(
 hP,(
 hP,(
 hP,(
-hP0#
 hP0&
 hP0&
 hP0&
 hP0(
 hP0(
-hP1"
+hP1$
 hP4'
 hP4'
 hP4'
@@ -38688,11 +38715,11 @@ hP=&
 hP=&
 hP=&
 hP=&
-hP@ 
-hPA!
+hP? 
+hPB 
+hPB%
 hPC*
 hPC+
-hPD 
 hPE&
 hPE&
 hPE&
@@ -38701,6 +38728,8 @@ hPE&
 hPE&
 hPE*
 hPG,
+hPH$
+hPL#
 hPL,
 hPMA
 hPN*
@@ -38717,8 +38746,6 @@ hPP&
 hPP&
 hPP&
 hPP&
-hPQ#
-hPQ$
 hPQ*
 hPQ+
 hPQ+
@@ -38730,6 +38757,7 @@ hPS+
 hPS,
 hPT*
 hPTA
+hPU%
 hPU(
 hPU(
 hPW&
@@ -38742,6 +38770,7 @@ hPW&
 hPW&
 hPW,
 hPX,
+hP[%
 hP['
 hP['
 hP['
@@ -38772,6 +38801,8 @@ hP[*
 hP[*
 hP[*
 hP[*
+hP[E
+hP\%
 hP\'
 hP\'
 hP\'
@@ -38797,7 +38828,6 @@ hP^&
 hP^&
 hP^&
 hP^&
-hP_%
 hP_&
 hP_&
 hP_&
@@ -38806,18 +38836,23 @@ hP_&
 hP_&
 hP_&
 hP_,
+hP`%
 hPa,
+hPb"
 hPb,
 hPc(
 hPc(
 hPc(
 hPdA
 hPe+
+hPf%
+hPg%
 hPg(
 hPg(
 hPg(
 hPh,
 hPi*
+hPp!
 hPp&
 hPp&
 hPp&
@@ -38844,26 +38879,23 @@ hPp'
 hPp(
 hPp(
 hPp(
-hPq"
-hPt$
-hPu%
+hPr"
+hPr$
+hPs%
 hPy%
-hP|%
+hPzD
 hP}A
-hP~#
-hP~*
-hP~*
-hQ  
-hQT"
-hQv$
-hRIF
-hR| 
-hS* 
-hS+ 
-hS, 
-hS- 
-hSF!
-hSU"
+hQCC
+hQO"
+hQu$
+hRZ#
+hRv 
+hR{F
+hS	!
+hS$$
+hS: 
+hSF$
+hSJ"
 hSVW
 hSVW
 hSVW
@@ -38871,10 +38903,10 @@ hSVW
 hSVW
 hSVW
 hSVW
-hSW"
-hSZ 
-hSc#
-hSn$
+hSe!
+hSo$
+hSr#
+hS}"
 hT	+
 hT	+
 hT	,
@@ -38885,7 +38917,6 @@ hT '
 hT '
 hT '
 hT '
-hT!"
 hT!'
 hT!'
 hT!'
@@ -38908,8 +38939,6 @@ hT(,
 hT),
 hT*,
 hT+,
-hT+D
-hT-$
 hT.,
 hT4,
 hT5'
@@ -38977,14 +39006,12 @@ hT^,
 hTb+
 hTb+
 hTf,
-hTk!
 hTl*
 hTl*
 hTl*
 hTl*
 hTl*
 hTl*
-hTq 
 hTr*
 hTs,
 hTu&
@@ -39001,10 +39028,10 @@ hT{(
 hT{(
 hT{(
 hT{(
-hU_#
-hV^F
+hUj$
 hW%B
-hW(D
+hWIF
+hWy 
 hX
 (
 hX
@@ -39026,7 +39053,6 @@ hX'*
 hX'*
 hX'*
 hX'*
-hX)$
 hX*&
 hX+&
 hX+'
@@ -39036,18 +39062,14 @@ hX+'
 hX+'
 hX+'
 hX-,
+hX0$
 hX0A
 hX0A
 hX1A
 hX1A
-hX2!
-hX2$
 hX3,
-hX6 
-hX7!
 hX7,
-hX8!
-hX9 
+hX8 
 hX:&
 hX:&
 hX:&
@@ -39060,9 +39082,6 @@ hX:(
 hX:(
 hX:(
 hX:+
-hX; 
-hX;!
-hX= 
 hX>&
 hX>&
 hX>&
@@ -39071,14 +39090,12 @@ hX>&
 hX>&
 hX>&
 hX?+
-hX@$
 hX@&
 hX@&
 hX@&
 hX@&
 hXA'
-hXC"
-hXC#
+hXB$
 hXD&
 hXD&
 hXD&
@@ -39096,6 +39113,8 @@ hXG(
 hXG(
 hXG(
 hXG+
+hXH!
+hXI!
 hXIO
 hXIO
 hXJ'
@@ -39103,13 +39122,16 @@ hXJ'
 hXJ'
 hXJ'
 hXJ'
+hXK!
 hXK+
 hXK+
 hXK+
 hXN'
 hXN'
 hXN'
-hXP#
+hXP!
+hXR!
+hXR#
 hXT&
 hXT&
 hXT&
@@ -39128,10 +39150,8 @@ hXW'
 hXW'
 hXW'
 hXW'
-hXX#
 hXXA
 hXXA
-hXY#
 hXY(
 hXZ'
 hXZ(
@@ -39139,6 +39159,7 @@ hXZ+
 hXZ+
 hX['
 hX\A
+hX^$
 hX^*
 hX^*
 hX^*
@@ -39171,16 +39192,16 @@ hXb'
 hXb'
 hXc,
 hXd+
+hXf 
 hXf+
 hXg,
 hXp,
 hXr+
-hXt#
 hXy&
-hX{"
-hX~!
 hX~*
-hY9"
+hY+D
+hYM!
+hYT 
 hYW@
 hYW@
 hYW@
@@ -39200,16 +39221,22 @@ hYW@
 hYW@
 hYW@
 hYW@
-hY|!
-hZG"
-hZW!
-h[) 
-h[+"
-h[. 
-h[C 
-h[N 
-h[T!
-h[x#
+hYe"
+hYl!
+hYz 
+hY}#
+h[" 
+h[$ 
+h[.$
+h[/$
+h[4!
+h[C$
+h[E"
+h[O 
+h[^F
+h[n!
+h[s 
+h[v#
 h\!&
 h\!&
 h\!&
@@ -39218,7 +39245,6 @@ h\!&
 h\!&
 h\!&
 h\!&
-h\"E
 h\#(
 h\#(
 h\#(
@@ -39232,6 +39258,7 @@ h\&(
 h\&(
 h\&(
 h\&(
+h\(D
 h\)*
 h\)*
 h\)*
@@ -39254,6 +39281,8 @@ h\3'
 h\3'
 h\3'
 h\5(
+h\8$
+h\9$
 h\9,
 h\:,
 h\<&
@@ -39321,13 +39350,13 @@ h\_*
 h\_+
 h\_+
 h\d,
-h\e#
 h\g+
 h\i*
 h\i*
 h\i,
 h\j,
 h\kA
+h\o"
 h\o&
 h\o&
 h\o&
@@ -39352,6 +39381,7 @@ h\q'
 h\q*
 h\q+
 h\q+
+h\r 
 h\r&
 h\r&
 h\r&
@@ -39378,18 +39408,15 @@ h\t&
 h\v*
 h\v*
 h\{*
-h]6D
-h]d#
-h]fF
-h]z"
-h^(!
 h^(B
-h^)!
-h^a"
-h_2 
-h`	$
+h^=$
+h^o 
 h`
 "
+h`
+$
+h`
+%
 h`
 &
 h`
@@ -39404,6 +39431,7 @@ h`
 &
 h`
 ,
+h`!%
 h`!'
 h`!'
 h`!'
@@ -39412,11 +39440,16 @@ h`!'
 h`!'
 h`!'
 h`!'
+h`"#
+h`"%
 h`"&
+h`#%
 h`#(
 h`#(
 h`#,
+h`$%
 h`$(
+h`%%
 h`&'
 h`&'
 h`&*
@@ -39427,8 +39460,6 @@ h`&*
 h`&*
 h`&*
 h`&,
-h`'%
-h`(%
 h`('
 h`('
 h`('
@@ -39436,9 +39467,11 @@ h`('
 h`('
 h`(A
 h`(A
-h`+$
+h`*%
 h`,,
 h`/A
+h`0#
+h`1"
 h`2'
 h`2'
 h`2'
@@ -39477,11 +39510,10 @@ h`;'
 h`;'
 h`;A
 h`;A
-h`? 
+h`> 
 h`@+
 h`@A
-h`A%
-h`B 
+h`A 
 h`D+
 h`DO
 h`G&
@@ -39512,20 +39544,18 @@ h`I&
 h`I&
 h`I&
 h`I+
-h`J$
-h`M$
 h`N,
-h`P"
-h`R$
+h`Q#
+h`Q$
 h`R*
 h`S*
-h`T%
 h`T(
 h`T(
 h`T+
 h`T+
 h`U+
 h`U+
+h`V!
 h`V&
 h`V&
 h`V&
@@ -39534,7 +39564,6 @@ h`V&
 h`V&
 h`V&
 h`V&
-h`Z%
 h`Z&
 h`Z&
 h`Z&
@@ -39555,11 +39584,10 @@ h`\'
 h`\'
 h`\'
 h`\'
-h`]$
 h`](
 h`],
 h`^(
-h`_$
+h`_%
 h``,
 h`a(
 h`a(
@@ -39577,12 +39605,10 @@ h`c*
 h`c*
 h`c*
 h`e+
-h`eD
 h`g'
 h`g'
 h`g'
 h`g'
-h`h%
 h`i'
 h`i'
 h`i'
@@ -39598,31 +39624,30 @@ h`l&
 h`l&
 h`l&
 h`m+
-h`p!
 h`p+
 h`p+
 h`p+
+h`q"
 h`q&
 h`q&
 h`q&
 h`q&
 h`q&
 h`r*
-h`s$
+h`t$
 h`t,
+h`u%
 h`u*
 h`u*
 h`u*
-h`v%
 h`y%
-h`zC
-h`|#
 h`|%
-h`~"
-haV#
+h`~#
+ha"E
+ha# 
+haT"
 hack_is_material_crack
 hack_is_set_fire
-haj#
 halftime_materials
 hallucinogen_amount
 hallucinogen_wear_off_speed
@@ -39633,19 +39658,22 @@ has_offset
 has_opened_inventory_edit
 has_special_scale
 hash
+hav$
 hax... this is set if we use set_projectile_to_liquid
 hax_fix_going_through_ground
 hax_fix_going_through_ground has to be set, if set will lift the body upwards if it is inside sand
 hax_fix_going_through_sand
 hax_wait_till_pixel_scenes_loaded
+hb6D
+hbfF
 hbg@
-hbv 
-hc	!
-hc: 
-hc>$
 hcC@
-hcG$
-hce!
+hcO!
+hcU"
+hcW"
+hcc#
+hcn$
+hcv!
 hd	,
 hd '
 hd '
@@ -39654,6 +39682,7 @@ hd '
 hd '
 hd '
 hd '
+hd!"
 hd!(
 hd!(
 hd!(
@@ -39664,10 +39693,10 @@ hd!(
 hd!(
 hd!(
 hd$*
-hd&"
 hd'(
 hd'(
 hd*,
+hd-$
 hd-(
 hd.&
 hd/+
@@ -39768,7 +39797,6 @@ hdj*
 hdj*
 hdj*
 hdj*
-hdn#
 hdq,
 hdq,
 hdr,
@@ -39790,36 +39818,23 @@ hd{(
 hd{(
 hd{(
 hd{*
-he $
+he_#
 healerdrone_physics.xml
 healing
 healing aka negative damage. this should be given as a negative value.
 health_bar
 heart_containers
 heavy_intensity
+heeD
 height
 height were the background image starts
 height_check
-hek$
 hello
 hello --help
 herd id crash: 
 herd_id
-hf"E
-hfN#
-hfyC
-hfyC
-hfyC
-hfyC
-hfyC
-hfyC
-hfyC
-hfyC
-hfyC
-hg#"
-hg6D
-hgWF
-hgy 
+hezC
+hf5 
 hh
 (
 hh &
@@ -39832,9 +39847,10 @@ hh''
 hh''
 hh''
 hh''
+hh)$
 hh)&
 hh),
-hh*$
+hh*!
 hh**
 hh**
 hh**
@@ -39862,8 +39878,8 @@ hh1'
 hh1'
 hh1'
 hh1'
+hh2$
 hh3,
-hh4$
 hh4*
 hh4*
 hh4*
@@ -39872,9 +39888,9 @@ hh4+
 hh4,
 hh6A
 hh6A
+hh7 
 hh7+
 hh7+
-hh8 
 hh9&
 hh9&
 hh9&
@@ -39883,18 +39899,21 @@ hh9&
 hh9&
 hh9&
 hh9+
+hh:!
+hh<!
 hh<(
 hh<(
 hh<(
 hh<,
-hhA$
+hh@$
 hhA'
 hhA'
-hhB#
 hhB*
+hhC!
+hhC"
+hhC#
 hhD'
 hhD'
-hhF#
 hhFO
 hhG(
 hhG(
@@ -39904,13 +39923,9 @@ hhG(
 hhG(
 hhG(
 hhG(
-hhH!
 hhH+
-hhI!
-hhI#
 hhI+
 hhJ,
-hhK!
 hhL,
 hhM&
 hhM&
@@ -39938,10 +39953,9 @@ hhO'
 hhO'
 hhO'
 hhO'
-hhP!
+hhP#
 hhQ*
 hhQA
-hhR!
 hhRA
 hhU&
 hhU&
@@ -39952,7 +39966,6 @@ hhU&
 hhU&
 hhU&
 hhUA
-hhV"
 hhV(
 hhV(
 hhW&
@@ -39963,6 +39976,7 @@ hhW&
 hhW&
 hhW&
 hhW&
+hhX#
 hhX&
 hhX&
 hhX&
@@ -39973,6 +39987,7 @@ hhX&
 hhX&
 hhX+
 hhX+
+hhY#
 hh[*
 hh[*
 hh[*
@@ -39991,8 +40006,9 @@ hh\*
 hh\*
 hh\+
 hh\+
+hh]!
+hh^!
 hh_'
-hh`$
 hh`&
 hh`&
 hh`&
@@ -40004,7 +40020,6 @@ hh`&
 hh`+
 hh`+
 hha(
-hhb$
 hhb'
 hhb'
 hhb'
@@ -40013,8 +40028,6 @@ hhb'
 hhb'
 hhb'
 hhb(
-hhd$
-hhf 
 hhf*
 hhf*
 hhf*
@@ -40055,6 +40068,8 @@ hhr&
 hhr&
 hhr*
 hhs,
+hht#
+hhu 
 hhu'
 hhu'
 hhu'
@@ -40066,8 +40081,6 @@ hhv&
 hhv&
 hhv&
 hhv&
-hhw"
-hhw$
 hhw+
 hhw+
 hhw+
@@ -40077,45 +40090,39 @@ hhw+
 hhw+
 hhx+
 hhx+
-hh{#
+hh{"
 hh~*
-hi5$
-hiM!
-hiT 
-hiUF
-hia$
-hib#
+hi9"
 hide_from_prey
 hide_from_prey_target_distance
 hide_from_prey_time
-hie$
 highest
-hil!
 hills
 hit particle velocity = projectile_velocity * hit_particle_force_multiplier * some randomness
 hit points at the moment
 hit_particle_force_multiplier
 hitbox_radius
 hittable
-hiz 
-hjEF
-hjEF
-hjEF
-hjEF
-hjEF
-hjEF
-hjEF
-hjEF
-hjEF
-hjEF
-hk" 
-hk$ 
-hk4!
-hkI"
-hkO 
-hkg#
-hkn!
-hks 
+hjG"
+hk! 
+hk"E
+hk+"
+hk/ 
+hkB!
+hkS!
+hkn 
+hkq!
+hkx#
+hkyC
+hkyC
+hkyC
+hkyC
+hkyC
+hkyC
+hkyC
+hkyC
+hkyC
+hk{ 
 hl!'
 hl!'
 hl!'
@@ -40159,6 +40166,7 @@ hl5,
 hl6*
 hl6*
 hl6*
+hl6D
 hl7,
 hl9*
 hl9*
@@ -40213,6 +40221,7 @@ hlV+
 hlV+
 hlW(
 hlW(
+hlWF
 hl['
 hl[,
 hl](
@@ -40235,6 +40244,7 @@ hlc,
 hlc,
 hlcA
 hld,
+hle#
 hlh+
 hlh,
 hli+
@@ -40259,7 +40269,6 @@ hlq'
 hlq'
 hlq'
 hlq'
-hlr 
 hls&
 hls&
 hls&
@@ -40284,9 +40293,20 @@ hlx&
 hlx&
 hlx&
 hlx*
-hnZF
-hno 
-ho1F
+hmd#
+hmz"
+hnUF
+hna"
+hoEF
+hoEF
+hoEF
+hoEF
+hoEF
+hoEF
+hoEF
+hoEF
+hoEF
+hoEF
 hole_destroy_liquid
 hole_destroy_physics_dynamic
 hole_enabled
@@ -40295,8 +40315,6 @@ homing_target
 homing_targeting_coeff
 homing_velocity_multiplier
 honey
-hopC
-hopC
 horizontal_movement
 hotspots_filename
 hover_text
@@ -40370,6 +40388,8 @@ how often do we emit particles
 how often do we look for targets
 how quickly stains are dropped relative to normal drop speed
 how strongly do we carve the cave
+ho} 
+hp	$
 hp
 '
 hp
@@ -40549,6 +40569,7 @@ hp&*
 hp&*
 hp&*
 hp&,
+hp'%
 hp'*
 hp'*
 hp'*
@@ -40556,13 +40577,11 @@ hp'*
 hp'*
 hp'*
 hp'*
+hp(%
 hp(&
+hp+$
 hp-,
 hp.A
-hp/#
-hp/%
-hp3#
-hp8#
 hp;&
 hp;&
 hp;&
@@ -40575,7 +40594,6 @@ hp<A
 hp=)
 hp=)
 hp=+
-hp> 
 hp>Q
 hp>Q
 hp>Q
@@ -40583,10 +40601,8 @@ hp>Q
 hp>Q
 hp>Q
 hp>Q
-hp?%
-hp@%
-hpA 
-hpA#
+hp@ 
+hpA%
 hpA'
 hpA'
 hpB*
@@ -40605,7 +40621,6 @@ hpE'
 hpE(
 hpEA
 hpEA
-hpF%
 hpFA
 hpH+
 hpI'
@@ -40616,7 +40631,9 @@ hpI'
 hpI(
 hpI(
 hpI(
+hpJ$
 hpJ+
+hpM$
 hpN&
 hpN&
 hpN&
@@ -40694,31 +40711,35 @@ hpN)
 hpN)
 hpN)
 hpN)
+hpP"
 hpQ&
 hpQ&
 hpQ&
 hpQ&
 hpQ&
+hpR$
 hpR(
 hpS+
+hpT%
 hpT'
 hpT'
 hpT'
 hpT'
 hpT'
 hpU,
-hpV!
 hpW+
+hpY!
 hpY(
+hpZ%
 hpZ'
 hpZ+
 hpZ+
 hpZ,
 hp['
 hp\,
-hp^%
+hp]$
+hp_$
 hp_,
-hpa#
 hpf&
 hpf&
 hpf&
@@ -40733,15 +40754,11 @@ hpf,
 hpg,
 hpgA
 hph%
-hpi"
-hpi%
 hpj'
 hpj'
 hpj'
 hpj'
-hpn%
 hpo(
-hpp%
 hpp'
 hpp'
 hpp'
@@ -40762,12 +40779,11 @@ hpp'
 hpp,
 hpq*
 hpq+
-hpr$
+hps$
 hps(
 hps(
 hps(
 hps(
-hpt%
 hpu&
 hpu&
 hpu&
@@ -40784,22 +40800,24 @@ hp{&
 hp{&
 hp{&
 hp{&
+hp|#
 hp|%
 hp}&
 hp}&
 hp}&
 hp}&
-hq# 
+hp~"
+hq	 
+hq
+ 
+hq+!
 hq.B
-hq@"
-hqp#
-hs@#
-hsO!
-hs`"
-hsc"
-hsq$
-hsv!
-hsxF
+hqV#
+hqj#
+hs>$
+hsG$
+hsN!
+hsZF
 ht	,
 ht '
 ht '
@@ -40812,6 +40830,7 @@ ht '
 ht"+
 ht#(
 ht#(
+ht&"
 ht*,
 ht,,
 ht-A
@@ -40830,6 +40849,7 @@ ht1'
 ht1'
 ht1'
 ht1,
+ht1F
 ht4&
 ht4&
 ht4&
@@ -40860,7 +40880,6 @@ htE*
 htE,
 htF,
 htI,
-htMC
 htN'
 htN'
 htN'
@@ -40915,6 +40934,7 @@ htm&
 htm&
 htm&
 htm,
+htn#
 htp(
 htp(
 htp(
@@ -40926,6 +40946,8 @@ htp*
 htp+
 htp+
 htp+
+htpC
+htpC
 htq'
 htq'
 htq'
@@ -40961,28 +40983,24 @@ htu,
 htv+
 htv+
 htv+
-hu""
-hu+F
-hu+F
-hu+F
-hu+F
-hu+F
-hu+F
-hu+F
-hug$
+hu $
+hud 
+huk$
 hunt_box_radius
 hurt
 hurt_swim
-hv5 
-hvB"
-hvJ#
-hw:$
+hv4 
+hvN#
+hvp 
+hw#"
 hx +
 hx A
 hx A
 hx",
 hx#,
 hx%,
+hx' 
+hx( 
 hx(+
 hx)*
 hx)*
@@ -40991,7 +41009,7 @@ hx)*
 hx)*
 hx)*
 hx)*
-hx*!
+hx*$
 hx.&
 hx/,
 hx1+
@@ -41010,8 +41028,11 @@ hx3&
 hx3&
 hx3&
 hx3,
+hx4$
+hx5!
+hx6 
+hx6!
 hx6,
-hx7 
 hx7+
 hx7+
 hx8*
@@ -41022,11 +41043,11 @@ hx8*
 hx8*
 hx8*
 hx8+
+hx9 
+hx9!
 hx9,
-hx:!
-hx:#
-hx<!
-hx>#
+hx; 
+hx= 
 hx>&
 hx>&
 hx>&
@@ -41037,18 +41058,18 @@ hx>&
 hx>,
 hx?A
 hx?A
+hxA$
 hxA,
-hxB$
-hxC!
-hxD$
+hxB#
 hxDO
 hxDO
+hxF#
 hxF+
 hxF+
 hxG*
 hxG*
-hxH"
 hxH,
+hxI#
 hxIA
 hxIA
 hxK&
@@ -41074,8 +41095,8 @@ hxR&
 hxR&
 hxR&
 hxR,
-hxS"
 hxS*
+hxV"
 hxW'
 hxW'
 hxW'
@@ -41086,6 +41107,7 @@ hxW'
 hxW+
 hxX(
 hxX(
+hxZ!
 hxZ(
 hx[&
 hx[&
@@ -41096,15 +41118,14 @@ hx[&
 hx[&
 hx[&
 hx['
-hx]!
-hx]"
-hx^!
 hx_*
 hx_*
 hx_*
 hx_*
 hx_*
 hx_*
+hx`$
+hxb$
 hxb*
 hxb*
 hxb*
@@ -41112,6 +41133,7 @@ hxb*
 hxb+
 hxb+
 hxc+
+hxd$
 hxe*
 hxe*
 hxe*
@@ -41144,33 +41166,40 @@ hxt*
 hxt*
 hxt*
 hxt*
-hxu 
 hxu*
 hxu*
 hxu*
-hx~*
-hy6$
-hyh"
-hyz#
-hz'E
-h{! 
-h{,$
-h{.$
-h{/ 
-h{7$
+hxw"
+hxw$
+hxxF
+hx{#
+hy&!
+hy5$
+hyMC
+hy\!
+hya$
+hyb#
+hye$
+hz+F
+hz+F
+hz+F
+hz+F
+hz+F
+hz+F
+hz+F
+h{) 
+h{. 
 h{:@
 h{:@
 h{:@
 h{:@
-h{B!
-h{E#
-h{N"
-h{S!
-h{^$
-h{n 
-h{p"
-h{q!
-h{{ 
+h{C 
+h{I"
+h{N 
+h{W 
+h{g#
+h{j!
+h{}!
 h|
 (
 h|
@@ -41337,9 +41366,7 @@ h|{(
 h|{(
 h|{(
 h|{*
-h~6#
-h~[D
-h~rF
+h|~*
 i)!@
 iD$h
 i\)7.
@@ -41793,6 +41820,7 @@ j	hXg(
 j	h`
 j	h`
 j	h`
+j	h`
 j	h`1(
 j	hd-(
 j	hd-(
@@ -41806,7 +41834,6 @@ j	hhl'
 j	hhl'
 j	hl
 j	hl
-j	hp
 j	ht
 j	ht
 j	ht
@@ -41858,6 +41885,8 @@ h0
 j
 h0
 j
+h0
+j
 h0D*
 j
 h0D*
@@ -41891,8 +41920,6 @@ j
 h<
 j
 h<J+
-j
-h@
 j
 h@['
 j
@@ -41984,6 +42011,12 @@ hl
 j
 hl
 j
+hl
+j
+hl
+j
+hl
+j
 hlK+
 j
 hlK+
@@ -42013,10 +42046,6 @@ j
 hx
 j
 hx
-j
-h|
-j
-h|
 j
 h|
 j
@@ -42054,6 +42083,8 @@ j hP
 j hP
 j hP
 j hT
+j h|
+j h|
 j j 
 j j@
 j jO
@@ -42094,7 +42125,7 @@ j#hDR(
 j#hTH*
 j#h\
 j#h\
-j#hl
+j#h\
 j#hp
 j#hp
 j#hp
@@ -42288,7 +42319,7 @@ j,h,
 j,h,
 j,h,
 j,h8}&
-j,h\
+j,hL
 j,hh
 j-h 
 j-h$!&
@@ -42337,7 +42368,6 @@ j.hX@&
 j.hX@&
 j.hX@&
 j.hX@&
-j/h 
 j/h@
 j/hT
 j/hT
@@ -42368,7 +42398,6 @@ j1hlQ+
 j1hp-(
 j1hx
 j2hXJ'
-j3h 
 j3hT
 j3hh
 j3hh
@@ -42395,7 +42424,7 @@ j4h(
 j4h8P(
 j4hH
 j4hH
-j4hl
+j4h\
 j5ht
 j5ht
 j5ht
@@ -45674,7 +45703,7 @@ _^
 t
 _^
 t
-hfyC
+hkyC
 t *= perlin_time_freq
 t ;X
 t h[
@@ -46152,7 +46181,7 @@ t%WR
 t%WR
 t%WR
 t%WR
-t%Whr
+t%WhR
 t%h 
 t%h 
 t%h(
@@ -46235,18 +46264,18 @@ t'h (*
 t'h 9*
 t'h$9&
 t'h$<&
-t'h&
-t'h&
-t'h&
-t'h&
-t'h&
-t'h&
-t'h&
 t'h(
 t'h('*
 t'h()*
 t'h(=&
 t'h(?&
+t'h+
+t'h+
+t'h+
+t'h+
+t'h+
+t'h+
+t'h+
 t'h,
 t'h,
 t'h,
@@ -46258,9 +46287,9 @@ t'h0
 t'h0>&
 t'h0c&
 t'h0k*
-t'h1BF
 t'h4(*
 t'h49&
+t'h6BF
 t'h8
 t'h8**
 t'h89*
@@ -46316,12 +46345,12 @@ t'hh
 t'hh**
 t'hh9&
 t'hhk*
-t'hjEF
 t'hl(*
 t'hl9*
 t'hl=&
 t'hl?&
 t'hll*
+t'hoEF
 t'hp&*
 t'hp'*
 t'hp;&
@@ -46394,10 +46423,10 @@ t*h0c&
 t*h0d&
 t*h0g&
 t*h8
+t*h8
 t*h82*
 t*h8`&
 t*h@b&
-t*hH
 t*hH
 t*hH
 t*hH`*
@@ -46941,8 +46970,8 @@ t2hx
 t3VP
 t3h0
 t3h8
-t3hP
-t3hfyC
+t3hkyC
+t3hp
 t3h|p&
 t3j<j
 t3j<j
@@ -47135,13 +47164,6 @@ t6h$.&
 t6h$t(
 t6h$v(
 t6h${(
-t6h&
-t6h&
-t6h&
-t6h&
-t6h&
-t6h&
-t6h&
 t6h(
 t6h(
 t6h(
@@ -47155,6 +47177,13 @@ t6h(b'
 t6h(h'
 t6h(p'
 t6h(p'
+t6h+
+t6h+
+t6h+
+t6h+
+t6h+
+t6h+
+t6h+
 t6h,
 t6h,
 t6h,
@@ -47177,7 +47206,6 @@ t6h0^*
 t6h0v&
 t6h0v&
 t6h0v&
-t6h1BF
 t6h4
 t6h4
 t6h4
@@ -47201,6 +47229,7 @@ t6h4c(
 t6h4q'
 t6h4t(
 t6h4v(
+t6h6BF
 t6h8
 t6h8
 t6h8
@@ -47394,7 +47423,6 @@ t6hho'
 t6hho'
 t6hho'
 t6hhu'
-t6hjEF
 t6hl
 t6hl
 t6hl
@@ -47410,6 +47438,7 @@ t6hl&(
 t6hl^*
 t6hlc(
 t6hlq'
+t6hoEF
 t6hp
 t6hp
 t6hp
@@ -47444,7 +47473,6 @@ t6ht:(
 t6htN'
 t6htq'
 t6htq'
-t6hu+F
 t6hx
 t6hx
 t6hx
@@ -47459,6 +47487,7 @@ t6hx
 t6hxW'
 t6hxo'
 t6hxo'
+t6hz+F
 t6h|
 t6h|
 t6h|
@@ -47504,7 +47533,6 @@ t7hP
 t7hP
 t7hP
 t7hP
-t7hP
 t7hP7&
 t7hT
 t7hXJ'
@@ -47518,6 +47546,7 @@ t7h`I&
 t7hh
 t7hh
 t7hl
+t7hp
 t7hp
 t7hpI'
 t7hx
@@ -47795,12 +47824,12 @@ t=h\C&
 t=h`&'
 t=h`&'
 t=hd3*
-t=hfyC
 t=hh
 t=hh
 t=hh
 t=hh
 t=hhf*
+t=hkyC
 t=hpI'
 t=hp{&
 t=hp{&
@@ -49740,8 +49769,6 @@ tbh
 tbh 
 tbh 
 tbh 
-tbh 
-tbh$
 tbh$
 tbh$
 tbh(
@@ -49755,10 +49782,11 @@ tbh,
 tbh,
 tbh,
 tbh,
-tbh,
+tbh0
 tbh0
 tbh0
 tbh0d*
+tbh1|F
 tbh4
 tbh4
 tbh4
@@ -49772,15 +49800,19 @@ tbh8
 tbh<
 tbh<
 tbh<
+tbh<
 tbh<4*
 tbh=
 tbh?
 tbh@
 tbh@
+tbh@
 tbhD
 tbhD
 tbhD
 tbhD
+tbhD
+tbhD|F
 tbhH
 tbhH
 tbhHa*
@@ -49790,9 +49822,7 @@ tbhP
 tbhP
 tbhP6&
 tbhT
-tbhU
-tbhV
-tbhW
+tbhT
 tbhX
 tbhX
 tbhX
@@ -49807,26 +49837,24 @@ tbh^
 tbh`
 tbh`
 tbh`
+tbh`
 &
 tbh`('
 tbhd
-tbhh
+tbhd
+tbhe
+tbhf
 tbhh
 tbhh4*
 tbhhM&
 tbhhO&
-tbhi
-tbhj
+tbhl
+tbhp
 tbhp
 tbhp
 '
 tbhpN&
-tbht
-tbht
-tbhx
-tbhx
 tbhxb*
-tbh|
 tbh|a*
 tbj*ht
 tch(
@@ -51303,7 +51331,6 @@ u)h0
 u)ht
 u)j,
 u)j,
-u)jH
 u*VR
 u*VR
 u*VR
@@ -51605,7 +51632,6 @@ u,hH
 u,hH
 u,hH
 u,hH
-u,hH
 u,j 
 u,j$
 u,j,
@@ -51621,9 +51647,7 @@ u-hH
 u-hH
 u-hT
 u-hd
-u-j$
 u-jT
-u-jp
 u.hH
 u.hH
 u.hH
@@ -51634,7 +51658,6 @@ u.hH
 u.hH
 u.hH
 u.ht
-u.j,
 u/8F0t(
 u/Pj
 u/f9C
@@ -52392,10 +52415,12 @@ u2hH
 u2hH
 u2hH
 u2hH
+u2hH
 u2hl
 u2j
 P
 u2j*h
+u2j,
 u2j,
 u2j<P
 u2j@P
@@ -53065,10 +53090,7 @@ uch,
 uch0
 uch4
 uch8
-uch8
 uch<
-uch<
-uch@
 uch@
 uchD
 uchD
@@ -53108,7 +53130,6 @@ uf;M
 ug;F
 ug;U
 ug;U
-ugh<
 uhhH
 uhhH
 ui back sprite
@@ -53727,6 +53748,7 @@ yxxxV
 yxxxV
 z)z4K
 z,;G
+zC33
 zWhl?&
 z_index
 zlib corrupt
