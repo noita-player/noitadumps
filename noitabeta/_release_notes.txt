@@ -1,9 +1,9 @@
  
-CHANGES FROM MASTER BUILD - Nov 27 2019
+CHANGES FROM MASTER BUILD - Nov 28 2019
  
-FEATURE: New Game+
+FEATURE: Nightmare game mode
 FEATURE: Main menu
-FEATURE: Game mode selection menu 
+FEATURE: New game menu 
 FEATURE: Added 5 new spells
 FEATURE: Added 4 new enemies
  
@@ -39,6 +39,7 @@ BUGFIX: Physics damage was sometimes dealt multiple frames after it seemed to oc
 BUGFIX: Melee immunity didn't protect from tentacle attacks
 BUGFIX: Player's horizontal flight speed was randomized
 BUGFIX: Jäähdytyslaite should no longer self-destruct in certain circumstances
+BUGFIX: Healers etc didn't behave exactly as intended
  
 MODDING: Added a new tag 'projectile_player' for all default player projectiles
 MODDING: Lua - added dofile_once(filename). Use this if possible. Like dofile(), but runs the script only once per lua context.
