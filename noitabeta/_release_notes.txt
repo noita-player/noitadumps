@@ -1,11 +1,11 @@
  
-CHANGES FROM MASTER BUILD - Nov 28 2019
+RELEASE NOTES - Nov 29 2019 
  
 FEATURE: Nightmare game mode
 FEATURE: Main menu
 FEATURE: New game menu 
-FEATURE: Added 5 new spells
-FEATURE: Added 4 new enemies
+FEATURE: Added 6 new spells
+FEATURE: Added 5 new enemies
  
 UPDATE: Large aesthetical updates to a secret area
 UPDATE: Summon Deer Decoy is now properly named as Summon Deercoy
