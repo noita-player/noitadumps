@@ -1858,16 +1858,6 @@ ProjectileComponent
     mDamagedEntities                                                -                               ""
     mInitialSpeed                                                   -1 [0, 1]                       ""
 
-RainEmitterComponent
- - Members -----------------------------
-    lifetime                                                        3600 [0, 1000]                  ""
-    gravity_y                                                       10 [0, 10]                      ""
-    droplets_bounce                                                 1 [0, 1]                        ""
-    density                                                         0 [0, 3.5]                      ""
-    material                                                        water [0, 3.5]                  ""
-    extra_wind                                                      0 [0, 100]                      ""
-    mDensity                                                        0 [0, 3.5]                      ""
-
 RotateTowardsComponent
  - Members -----------------------------
     entity_with_tag                                                 player_unit [0, 1]              "will rotate this entity towards the closest entity with tag"
@@ -2163,9 +2153,8 @@ WorldStateComponent
     time                                                            0 [0, 1]                        ""
     time_total                                                      0 [0, 1000]                     ""
     day_count                                                       0 [0, 3.5]                      ""
-    rain                                                            0 [0, 1]                        ""
-    rain_target                                                     0 [0, 1]                        ""
-    rain_material                                                   water [0, 1]                    ""
+    rain                                                            0 [0, 1]                        "should be called clouds, controls amount of cloud cover in the sky"
+    rain_target                                                     0 [0, 1]                        "should be called clouds_target, controls amount of cloud cover in the sky"
     fog                                                             0 [0, 1]                        ""
     fog_target                                                      0 [0, 1]                        ""
     intro_weather                                                   0 [0, 1]                        "if set, will set the weather to be nice all the time"
@@ -2193,6 +2182,9 @@ WorldStateComponent
     INFINITE_GOLD_HAPPENING                                         0 [0, 1]                        "the secret ending with infinite gold"
     DEBUG_LOADED_FROM_AUTOSAVE                                      0 [0, 1]                        "how many times have loaded from autosaves"
     DEBUG_LOADED_FROM_OLD_VERSION                                   0 [0, 1]                        "how many times have we loaded from an old version of the game"
+ - Privates -----------------------------
+    rain_target_extra                                               0 [0, 1]                        ""
+    fog_target_extra                                                0 [0, 1]                        ""
 
 WormAIComponent
  - Members -----------------------------

@@ -12,6 +12,7 @@ BiomeMapGetName( [optional]x, [optional]y ) -> name
 BiomeMapGetPixel( x, y ) -> color_int [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
 BiomeMapGetSize
 BiomeMapGetVerticalPositionInsideBiome( x, y ) -> number
+BiomeMapLoadImage
 BiomeMapLoadImageCropped
 BiomeMapLoadImageCropped( x, y, path, image_x, image_y, image_w, image_h ) [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
 BiomeMapSetPixel( x, y, color_int ) [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
@@ -87,8 +88,11 @@ GameAddFlagRun( flag )
 GameCreateParticle( string material_name, x, y, how_many, xvel, yvel, just_visual, [optional]draw_as_long )
 GameDoEnding2
 GameDropAllItems( entity_id )
+GameEmitRainParticles( num_particles, width_outside_camera, material_name,  velocity_min, velocity_max, droplets_bounce, draw_as_long )
 GameEntityPlaySound( entity, event_name )
 GameGetCameraPos
+GameGetDateAndTimeLocal
+GameGetDateAndTimeUTC
 GameGetFrameNum
 GameGetGameEffect( entity_id, string GAME_EFFECT ) -> component_id
 GameGetGameEffectCount( entity_id, string GAME_EFFECT ) -> uint
@@ -129,6 +133,7 @@ GameTriggerMusicFadeOutAndDequeueAll( [optional]relative_fade_speed )
 GameVecToPhysicsVec( x, [optional]y ) -> x,y
 GenomeSetHerdId( entity_id, string new_herd_id )
 GetGameEffectLoadTo( entity_id, string game_effect_entity_file, always_load_new ) -> effect_component_id
+GetRandomAction
 GetRandomActionWithType
 GetSurfaceNormal( pos_x, pos_y, ray_length, ray_count ) -> found_normal,normal_x,normal_y,approximate_distance_from_surface
 GetUpdatedComponentID
