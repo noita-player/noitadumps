@@ -6,13 +6,14 @@ FEATURE: New Game+
 
 UPDATE: No restart when entering nightmare game via main menu
 UPDATE: Downwards bolt bundle has unlimited uses
-UPDATE: Various gameplay tweaks
 UPDATE: Weather phenomena
 UPDATE: Changed item attraction perk to gold attraction to make it more useful
 UPDATE: A hidden creature has an extra tool
 UPDATE: Tweaked a boss' sounds
 UPDATE: Foggy nights are darker
 UPDATE: Cosmetic tweaks to fire immunity perk
+UPDATE: Optimization - tentacles are more CPU-friendly
+UPDATE: Various gameplay tweaks
 
 BUGFIX: Nightmare mode - some of the entrances were blocked
 BUGFIX: Nightmare mode - empty chunks were appearing in places

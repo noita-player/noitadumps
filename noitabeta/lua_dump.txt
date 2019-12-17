@@ -91,7 +91,7 @@ GameClearOrbsFoundThisRun
 GameCreateParticle( string material_name, x, y, how_many, xvel, yvel, just_visual, [optional]draw_as_long )
 GameDoEnding2
 GameDropAllItems( entity_id )
-GameEmitRainParticles( num_particles, width_outside_camera, material_name,  velocity_min, velocity_max, droplets_bounce, draw_as_long )
+GameEmitRainParticles( num_particles, width_outside_camera, material_name, velocity_min, velocity_max, gravity, droplets_bounce, draw_as_long )
 GameEntityPlaySound( entity, event_name )
 GameGetCameraPos
 GameGetDateAndTimeLocal
