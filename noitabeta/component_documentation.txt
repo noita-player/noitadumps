@@ -668,6 +668,7 @@ DamageModelComponent
     fire_damage_ignited_amount                                      0.0003 [0, 2]                   "how much damage does being ignited do?"
     fire_damage_amount                                              0.2 [0, 2]                      "how much damage does fire do?, 0.2 is pretty good"
     mLastElectricityResistanceFrame                                 -2147483648 [0, 1]              "Last frame electricity has no effect. Should not be private!"
+    mLastFrameReportedBlock                                         -2147483648 [0, 1]              "Last frame a damage block message was displayed for this entity"
  - Objects -----------------------------
     damage_multipliers                                              -                               "the multipliers applied to different types of damage"
  - Privates -----------------------------
@@ -1282,6 +1283,7 @@ LuaComponent
     script_material_area_checker_failed                             -                               "if set, calls function 'material_area_checker_failed( pos_x, pos_y, )' when we receive message Message_MaterialAreaCheckerFailed"
     script_material_area_checker_success                            -                               "if set, calls function 'material_area_checker_success( pos_x, pos_y, )' when we receive message Message_MaterialAreaCheckerSuccess"
     script_electricity_receiver_switched                            -                               "if set, calls function 'electricity_receiver_switched( bool is_electrified )' when we receive message Message_ElectricityReceiverSwitched"
+    script_kick                                                     -                               "if set, calls function 'kick( bool is_electrified )' when we receive message Message_Kick"
     mLastExecutionFrame                                             -1 [0, 1]                       ""
  - Privates -----------------------------
     mNextExecutionTime                                              -1 [0, 1]                       ""
