@@ -9,13 +9,15 @@ BeginTriggerDeath
 BeginTriggerHitWorld
 BeginTriggerTimer
 BiomeMapGetName( [optional]x, [optional]y ) -> name
-BiomeMapGetPixel( x, y ) -> color_int
+BiomeMapGetPixel( x, y ) -> color_int [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
 BiomeMapGetSize
 BiomeMapGetVerticalPositionInsideBiome( x, y ) -> number
+BiomeMapLoadImage
 BiomeMapLoadImageCropped
-BiomeMapLoadImageCropped( x, y, path, image_x, image_y, image_w, image_h )
-BiomeMapSetPixel( x, y, color_int )
-BiomeMapSetSize( w, h )
+BiomeMapLoadImageCropped( x, y, path, image_x, image_y, image_w, image_h ) [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
+BiomeMapLoad_KeepPlayer
+BiomeMapSetPixel( x, y, color_int ) [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
+BiomeMapSetSize( w, h ) [This is available if BIOME_MAP in magic_numbers.xml points to a lua file, in the context of that file.]
 CellFactory_GetAllFires( include_statics = true ) -> {string}
 CellFactory_GetAllGases( include_statics = true ) -> {string}
 CellFactory_GetAllLiquids( include_statics = true ) -> {string}
@@ -25,6 +27,7 @@ CellFactory_GetName( int material_id ) -> string
 CellFactory_GetType( string material_name ) -> int
 ComponentGetMembers( component_id ) -> {string-string} [returns a string-indexed table of string]
 ComponentGetMetaCustom( component_id, variable_name ) -> string|nil
+ComponentGetTypeName( component_id ) -> string
 ComponentGetValue( component_id, variable_name ) -> string|nil
 ComponentGetValueBool( component_id, variable_name ) -> bool
 ComponentGetValueFloat( component_id, variable_name ) -> number
@@ -59,8 +62,8 @@ EntityGetAllChildren( entity_id ) -> {entity_id}|nil
 EntityGetAllComponents( entity_id ) -> {component_id}
 EntityGetClosestWithTag
 EntityGetClosestWithTag( pos_x, pos_y, string tag ) -> entity_id
-EntityGetComponent( entity_id, component_type_name ) -> {component_id}|nil
-EntityGetFirstComponent( entity_id, component_type_name, [optional]tag ) -> component_id
+EntityGetComponent( entity_id, component_type_name, [optional]tag ) -> {component_id}|nil
+EntityGetFirstComponent( entity_id, component_type_name, [optional]tag ) -> component_id|nil
 EntityGetInRadiusWithTag
 EntityGetInRadiusWithTag( pos_x, pos_y, radius, entity_tag ) -> {entity_id}
 EntityGetIsAlive
@@ -84,11 +87,15 @@ EntitySetName( entity_id, name )
 EntitySetTransform( entity_id, x, [optional]y, [optional]rotation, [optional]scale_x, [optional]scale_y )
 FindFreePositionForBody( ideal_pos_x, idea_pos_y, velocity_x, velocity_y, body_radius ) -> x,y
 GameAddFlagRun( flag )
+GameClearOrbsFoundThisRun
 GameCreateParticle( string material_name, x, y, how_many, xvel, yvel, just_visual, [optional]draw_as_long )
 GameDoEnding2
 GameDropAllItems( entity_id )
+GameEmitRainParticles( num_particles, width_outside_camera, material_name, velocity_min, velocity_max, gravity, droplets_bounce, draw_as_long )
 GameEntityPlaySound( entity, event_name )
 GameGetCameraPos
+GameGetDateAndTimeLocal
+GameGetDateAndTimeUTC
 GameGetFrameNum
 GameGetGameEffect( entity_id, string GAME_EFFECT ) -> component_id
 GameGetGameEffectCount( entity_id, string GAME_EFFECT ) -> uint
@@ -128,7 +135,8 @@ GameTriggerMusicEvent( event_path, can_be_faded, x, y )
 GameTriggerMusicFadeOutAndDequeueAll( [optional]relative_fade_speed )
 GameVecToPhysicsVec( x, [optional]y ) -> x,y
 GenomeSetHerdId( entity_id, string new_herd_id )
-GetGameEffectLoadTo( entity_id, string game_effect_entity_file, always_load_new ) -> effect_compoent_id
+GetGameEffectLoadTo( entity_id, string game_effect_entity_file, always_load_new ) -> effect_component_id
+GetRandomAction
 GetRandomActionWithType
 GetSurfaceNormal( pos_x, pos_y, ray_length, ray_count ) -> found_normal,normal_x,normal_y,approximate_distance_from_surface
 GetUpdatedComponentID
@@ -186,7 +194,7 @@ LoadPixelScene( string materials_filename, string colors_filename, x, y, string 
 LogAction( action_name )
 LooseChunk( world_pos_x, world_pos_y, image_filename, [optional] max_durability )
 Lua - error - SetTimeOut( time_to_execute, file_to_execute, function_to_call) , file_to_execute was NULL
-MagicNumbersGetValue( key )
+MagicNumbersGetValue( key ) -> string
 ModDevGenerateSpriteUVsForDirectory( directory_path ) [Only available via noita_dev.exe]
 ModLuaFileAppend( to_filename, from_filename )
 ModMagicNumbersFileAdd( filename )
@@ -206,9 +214,11 @@ PhysicsRemoveJoints( world_pos_min_x, world_pos_min_y, world_pos_max_x, world_po
 PhysicsSetStatic( entity_id, bool is_static )
 PhysicsVecToGameVec( x, [optional]y ) -> x,y
 ProceduralRandom
+ProceduralRandomf
+ProceduralRandomf( x, y, [optional]a, [optional]b ) -> number [This is kinda messy. If given 2 arguments, returns number between 0.0 and 1.0. If given 3 arguments, returns a number between 0 and 'a'. If given 4 arguments returns a number between 'a' and 'b'.]
 RandomDistribution
 RandomDistributionf
-RandomDistributionf( min, max, mean, (sharpness=1.f), (baseline=0.005) ) -> number
+Randomf
 Raytrace( x1, y1, x2, y2 ) -> did_hit,hit_x,hit_y
 Reflection_RegisterProjectile
 RegisterGunAction
@@ -217,6 +227,8 @@ RegisterGunShotEffects
 RegisterPerk
 RegisterSpawnFunction( uint32 color, string function_name )
 RemoveFlagPersistent( key )
+SessionNumbersGetValue( key ) -> string
+SessionNumbersSetValue( key, value )
 SetPlayerSpawnLocation( x, y )
 SetProjectileConfigs
 SetRandomSeed(x,y)
@@ -232,7 +244,7 @@ StatsBiomeReset
 StatsGetValue( key ) -> string
 StatsLogPlayerKill
 UnlockItem( action_id )
-dofile( filename )
-dofile( filename )
+__loaded={} dofile=function(filename) local f=__loaded[filename] if f==nil then f,err=loadfile(filename) if f==nil then return f,err end __loaded[filename]=f end local result = f() do_mod_appends(filename) return result end
 print
+print_error
 print_error

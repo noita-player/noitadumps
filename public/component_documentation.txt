@@ -106,7 +106,7 @@ AltarComponent
     uses_remaining                                                  3 [0, 1]                        ""
  - Privates -----------------------------
     m_recognized_entity_tags                                        -                               ""
-    m_recognized_entity_tags_count                                  -                               ""
+    m_recognized_entity_tags_count                                  0 [0, 1]                        ""
     m_current_entity_tags                                           -                               ""
 
 AnimalAIComponent
@@ -114,7 +114,8 @@ AnimalAIComponent
     ai_state                                                        0 [0, 20]                       "Current state of ai, defines what the animal is doing"
     ai_state_timer                                                  0 [0, 1000]                     "If not 0, then we wait till this frame to pop current state from our state stack"
     preferred_job                                                   -                               "We always do this job, unless interrupted (i.e. by taking fire damage)"
-    escape_if_damaged_probability                                   30 [0, 1]                       "If 1, we try to escape if someone with a better food chain rank damages us"
+    escape_if_damaged_probability                                   30 [0, 1]                       "the chance of escaping if someone damages us. only works if 'can_fly = 0 '"
+    attack_if_damaged_probability                                   100 [0, 1]                      "the chance of counter-attacking if someone damages us, and we didn't escape"
     eye_offset_x                                                    0 [-100, 100]                   "We cast rays from our position + eye_offset to check if we can see something"
     eye_offset_y                                                    0 [-100, 100]                   "We cast rays from our position + eye_offset to check if we can see something"
     attack_only_if_attacked                                         0 [0, 1]                        "If 1, we never attack anyone unless attacked before by someone"
@@ -128,6 +129,7 @@ AnimalAIComponent
     pathfinding_max_depth_has_target                                120 [0, 5000]                   "The maximum depth (in nodes) path search use when we have found prey"
     aggressiveness_min                                              80 [0, 100]                     "what's the initial random aggressiveness of this creature"
     aggressiveness_max                                              100 [0, 100]                    "what's the initial random aggressiveness of this creature"
+    tries_to_ranged_attack_friends                                  0 [0, 1]                        "if 1, the AI tries to attack whoever it considers a friend based on herd_ids, CHARMED and BERSERK status etc. useful e.g. for healers."
     attack_melee_enabled                                            1 [0, 1]                        "If 1, and melee attack has been configured, we can perform melee attacks"
     attack_dash_enabled                                             0 [0, 1]                        "If 1, and dash attack has been configured, we can perform dash attacks (a long-distance melee attack where we dash towards the enemy)"
     attack_landing_ranged_enabled                                   0 [0, 1]                        "If 1, and ranged attack has been configured, we can perform ranged attacks"
@@ -441,6 +443,7 @@ CharacterPlatformingComponent
     run_animation_velocity_switching_threshold                      45 [0, 1000]                    ""
     run_animation_velocity_switching_enabled                        0 [0, 1]                        ""
     turn_animation_frames_between                                   20 [0, 100]                     ""
+    precision_jumping_max_duration_frames                           -1 [0, 1]                       "maximum duration of precision jump or knockback. -1 = infinite"
  - Privates -----------------------------
     mExAnimationPos                                                 -                               ""
     mFramesInAirCounter                                             -1 [0, 1]                       ""
@@ -665,6 +668,7 @@ DamageModelComponent
     fire_damage_ignited_amount                                      0.0003 [0, 2]                   "how much damage does being ignited do?"
     fire_damage_amount                                              0.2 [0, 2]                      "how much damage does fire do?, 0.2 is pretty good"
     mLastElectricityResistanceFrame                                 -2147483648 [0, 1]              "Last frame electricity has no effect. Should not be private!"
+    mLastFrameReportedBlock                                         -2147483648 [0, 1]              "Last frame a damage block message was displayed for this entity"
  - Objects -----------------------------
     damage_multipliers                                              -                               "the multipliers applied to different types of damage"
  - Privates -----------------------------
@@ -1020,7 +1024,8 @@ IKLimbWalkerComponent
     ground_attachment_max_angle                                     0.8 [0, 1]                      ""
     ground_attachment_ray_length_coeff                              1.15 [0, 1]                     ""
     leg_velocity_coeff                                              15 [0, 1]                       ""
-    mState                                                          0 [0, 1]                        ""
+    affect_flying                                                   0 [0, 1]                        "if set, will cause the mFlyingTime (in CharacterDataComponent) of the parent to be 0 or 1 depending on if we're touching anything"
+    mState                                                          0 [0, 1]                        "0 = detached, 1 = attached"
 
 IngestionComponent
  - Members -----------------------------
@@ -1129,6 +1134,7 @@ ItemComponent
     ui_sprite                                                       -                               "sprite displayed for the item in various UIs. If not empty overrides sprites declared by Ability and ItemAction"
     ui_description                                                  -                               "item description displayed in various UIs"
     enable_orb_hacks                                                0 [0, 1]                        ""
+    is_all_spells_book                                              0 [0, 1]                        ""
     next_frame_pickable                                             0 [0, 1]                        ""
     is_pickable                                                     1 [0, 1]                        "can this be picked up and placed on someone's inventory"
     is_hittable_always                                              0 [0, 1]                        "to override the weirdness that is is_pickable, which affects if this is hittable or not. If true, will always be hittable regardless of is_pickable"
@@ -1277,6 +1283,7 @@ LuaComponent
     script_material_area_checker_failed                             -                               "if set, calls function 'material_area_checker_failed( pos_x, pos_y, )' when we receive message Message_MaterialAreaCheckerFailed"
     script_material_area_checker_success                            -                               "if set, calls function 'material_area_checker_success( pos_x, pos_y, )' when we receive message Message_MaterialAreaCheckerSuccess"
     script_electricity_receiver_switched                            -                               "if set, calls function 'electricity_receiver_switched( bool is_electrified )' when we receive message Message_ElectricityReceiverSwitched"
+    script_kick                                                     -                               "if set, calls function 'kick( bool is_electrified )' when we receive message Message_Kick"
     mLastExecutionFrame                                             -1 [0, 1]                       ""
  - Privates -----------------------------
     mNextExecutionTime                                              -1 [0, 1]                       ""
@@ -1853,16 +1860,6 @@ ProjectileComponent
     mDamagedEntities                                                -                               ""
     mInitialSpeed                                                   -1 [0, 1]                       ""
 
-RainEmitterComponent
- - Members -----------------------------
-    lifetime                                                        3600 [0, 1000]                  ""
-    gravity_y                                                       10 [0, 10]                      ""
-    droplets_bounce                                                 1 [0, 1]                        ""
-    density                                                         0 [0, 3.5]                      ""
-    material                                                        water [0, 3.5]                  ""
-    extra_wind                                                      0 [0, 100]                      ""
-    mDensity                                                        0 [0, 3.5]                      ""
-
 RotateTowardsComponent
  - Members -----------------------------
     entity_with_tag                                                 player_unit [0, 1]              "will rotate this entity towards the closest entity with tag"
@@ -2158,9 +2155,8 @@ WorldStateComponent
     time                                                            0 [0, 1]                        ""
     time_total                                                      0 [0, 1000]                     ""
     day_count                                                       0 [0, 3.5]                      ""
-    rain                                                            0 [0, 1]                        ""
-    rain_target                                                     0 [0, 1]                        ""
-    rain_material                                                   water [0, 1]                    ""
+    rain                                                            0 [0, 1]                        "should be called clouds, controls amount of cloud cover in the sky"
+    rain_target                                                     0 [0, 1]                        "should be called clouds_target, controls amount of cloud cover in the sky"
     fog                                                             0 [0, 1]                        ""
     fog_target                                                      0 [0, 1]                        ""
     intro_weather                                                   0 [0, 1]                        "if set, will set the weather to be nice all the time"
@@ -2183,10 +2179,14 @@ WorldStateComponent
     player_polymorph_count                                          0 [0, 1]                        "how many times player has been polymorphed"
     player_polymorph_random_count                                   0 [0, 1]                        "how many times player has been random polymorphed"
     global_genome_relations_modifier                                0 [0, 1]                        "Genome_GetHerdRelation adds this value to the results. 100 = good relations, 0 is bad "
+    mods_have_been_active_during_this_run                           0 [0, 1]                        ""
     EVERYTHING_TO_GOLD                                              0 [0, 1]                        "if true everything will be gold + used to track if the wallet should go to infinite"
     INFINITE_GOLD_HAPPENING                                         0 [0, 1]                        "the secret ending with infinite gold"
     DEBUG_LOADED_FROM_AUTOSAVE                                      0 [0, 1]                        "how many times have loaded from autosaves"
     DEBUG_LOADED_FROM_OLD_VERSION                                   0 [0, 1]                        "how many times have we loaded from an old version of the game"
+ - Privates -----------------------------
+    rain_target_extra                                               0 [0, 1]                        ""
+    fog_target_extra                                                0 [0, 1]                        ""
 
 WormAIComponent
  - Members -----------------------------
