@@ -106,7 +106,7 @@ AltarComponent
     uses_remaining                                                  3 [0, 1]                        ""
  - Privates -----------------------------
     m_recognized_entity_tags                                        -                               ""
-    m_recognized_entity_tags_count                                  -                               ""
+    m_recognized_entity_tags_count                                  0 [0, 1]                        ""
     m_current_entity_tags                                           -                               ""
 
 AnimalAIComponent

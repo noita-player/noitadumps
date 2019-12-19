@@ -62,8 +62,8 @@ EntityGetAllChildren( entity_id ) -> {entity_id}|nil
 EntityGetAllComponents( entity_id ) -> {component_id}
 EntityGetClosestWithTag
 EntityGetClosestWithTag( pos_x, pos_y, string tag ) -> entity_id
-EntityGetComponent( entity_id, component_type_name ) -> {component_id}|nil
-EntityGetFirstComponent( entity_id, component_type_name, [optional]tag ) -> component_id
+EntityGetComponent( entity_id, component_type_name, [optional]tag ) -> {component_id}|nil
+EntityGetFirstComponent( entity_id, component_type_name, [optional]tag ) -> component_id|nil
 EntityGetInRadiusWithTag
 EntityGetInRadiusWithTag( pos_x, pos_y, radius, entity_tag ) -> {entity_id}
 EntityGetIsAlive
