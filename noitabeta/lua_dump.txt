@@ -215,7 +215,7 @@ PhysicsSetStatic( entity_id, bool is_static )
 PhysicsVecToGameVec( x, [optional]y ) -> x,y
 ProceduralRandom
 ProceduralRandomf
-ProceduralRandomf( x, y, [optional]a, [optional]b ) -> number [This is kinda messy. If given 3  arguments, returns number between 0.0 and 1.0. If given 1 arguments, returns a number between 0 and 'a'. If given 2 arguments returns a number between 'a' and 'b'.]
+ProceduralRandomf( x, y, [optional]a, [optional]b ) -> number [This is kinda messy. If given 2 arguments, returns number between 0.0 and 1.0. If given 3 arguments, returns a number between 0 and 'a'. If given 4 arguments returns a number between 'a' and 'b'.]
 RandomDistribution
 RandomDistributionf
 Randomf

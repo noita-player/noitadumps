@@ -2,7 +2,7 @@
 FEATURE: New, very elusive creature roams a certain area...
 FEATURE: New creature. Very bomb.
 FEATURE: 5 new weather phenomena
-FEATURE: 4 new magical materials
+FEATURE: 5 new magical materials
 FEATURE: New Game+
  
 UPDATE: No restart when entering nightmare game via main menu
@@ -27,7 +27,8 @@ BUGFIX: Fixed TNT explosions
 BUGFIX: Several randomized effects were broken
 BUGFIX: Loading screen audio didn't fade smoothly
 BUGFIX: Autosave should work better now
-BUGFIX: Boss crashes and general stability fixes
+BUGFIX: Crash - Boss crashes, general stability fixes
+BUGFIX: Crash - relating to the Light modifier
  
 MODDING: Mods can define new game modes (see mods/nightmare for an example)
 MODDING: Lua/BUGFIX - dofile handling when file doesn't exist was a bit broken and didn't log errors

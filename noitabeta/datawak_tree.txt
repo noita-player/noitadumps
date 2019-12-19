@@ -8508,7 +8508,7 @@ scripts\gun\procedural\wand_unshuffle_04.lua c4e0818d449261171ed9c17d18f3dd56a9e
 scripts\gun\procedural\wand_unshuffle_05.lua 3bc9bd30a2aeec75be77a068d92bab27f329134b
 scripts\gun\procedural\wand_unshuffle_06.lua 1f72dc460fd0043ffa1c1800d4fb84b37a022906
 scripts\gun\procedural\wands.lua a9e6730fd4fbb4e19a8cf978a3223ef81caedaf8
-scripts\init.lua 53c84803108ffde752c3fa6c399f2941a3d8c011
+scripts\init.lua 91a71d1fc17478b690c642779fb0c2fa0da3bb97
 scripts\items dir
 scripts\items\bomb_throw_item.lua 2135f32144d6ecd831b4d0c255bb4f76cdb6a379
 scripts\items\chest_random.lua 78722e8b5d84ce9a3cbb9664996c13f73d2647ec
