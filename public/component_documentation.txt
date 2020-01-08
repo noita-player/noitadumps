@@ -1117,6 +1117,7 @@ ItemComponent
     item_name                                                       -                               "the name of the item"
     is_stackable                                                    0 [0, 1]                        "does this item stack on other items the same 'item_name' in the inventory?"
     is_consumable                                                   0 [0, 1]                        "if 1, using this item will reduce 'uses_remaining'. When it reaches zero the item is destroyed"
+    stats_count_as_item_pick_up                                     1 [0, 1]                        "does this count as an item that was picked up in the stats"
     auto_pickup                                                     0 [0, 1]                        "if 1, item will be automatically picked up, no pickup hint is shown"
     permanently_attached                                            0 [0, 1]                        "if 1, this item can't be removed from a container once it is put inside one"
     uses_remaining                                                  -1 [0, 1]                       "how many times can this item be used?"

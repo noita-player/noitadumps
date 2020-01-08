@@ -1,4 +1,18 @@
-﻿FEATURE: 15 new spells!
+﻿HOTFIXES - Jan 8 2020
+
+BUGFIX: Intro had random weather
+BUGFIX: Light modifier would sometimes cause mysterious meat to appear
+BUGFIX: Invisibility status created dummy entities that were detected as the actual player because of the tags they had
+BUGFIX: Some state from previous save was carried over to new game in some occasions
+BUGFIX: Toimari's and Kiukkumöykky's minion spawning algorithm changed to scale better with HP
+
+HOTFIXES - Dec 20 2019
+  
+BUGFIX: Stats - Gold nuggets don't count towards picked up items stat anymore
+
+RELEASE NOTES - Dec 19 2019 
+
+FEATURE: 15 new spells!
 FEATURE: New, very elusive creature roams a certain area...
 FEATURE: New creature. Very bomb.
 FEATURE: 5 new weather phenomena
